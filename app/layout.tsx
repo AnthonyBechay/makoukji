@@ -15,9 +15,9 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Makoukji - Modern Solutions for Your Business",
-  description: "Welcome to Makoukji - Your trusted partner for innovative business solutions and exceptional service.",
-  keywords: "makoukji, business solutions, consulting, services",
+  title: "Makoukji Auto Glass - Professional Auto Glass Repair in Dora, Lebanon",
+  description: "Ets. Georges Makoukji - Expert auto glass repair and replacement services in Dora, Lebanon. Fast, reliable, and professional windshield repair. Call us today!",
+  keywords: "makoukji, auto glass repair, windshield repair, car glass replacement, Dora Lebanon, auto glass service",
 };
 
 export default function RootLayout({

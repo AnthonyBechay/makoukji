@@ -1,82 +1,83 @@
 export const metadata = {
-  title: 'Our Services - Makoukji',
-  description: 'Discover the comprehensive range of services offered by Makoukji to help your business succeed.',
+  title: 'Our Services - Makoukji Auto Glass',
+  description: 'Professional auto glass repair and replacement services in Dora, Lebanon. Windshield repair, glass replacement, and emergency services.',
 };
 
 export default function Services() {
   const services = [
     {
-      title: 'Business Consulting',
-      description: 'Strategic guidance to help your business grow and succeed. We analyze your current situation and provide actionable recommendations.',
+      title: 'Windshield Repair',
+      description: 'Quick and professional windshield chip and crack repairs. We can fix most damage before it spreads, saving you time and money.',
       icon: (
         <svg className="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z" />
+          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 6V4m0 2a2 2 0 100 4m0-4a2 2 0 110 4m-6 8a2 2 0 100-4m0 4a2 2 0 110-4m0 4v2m0-6V4m6 6v10m6-2a2 2 0 100-4m0 4a2 2 0 110-4m0 4v2m0-6V4" />
         </svg>
       ),
-      color: 'from-blue-500 to-blue-600',
+      color: 'from-yellow-500 to-amber-500',
     },
     {
-      title: 'Technology Solutions',
-      description: 'Cutting-edge technology solutions tailored to your business needs. From software development to system integration.',
+      title: 'Windshield Replacement',
+      description: 'Full windshield replacement using premium OEM and aftermarket glass. Professional installation with quality guarantee.',
       icon: (
         <svg className="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4" />
+          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15" />
         </svg>
       ),
-      color: 'from-purple-500 to-purple-600',
+      color: 'from-amber-500 to-yellow-500',
     },
     {
-      title: 'Digital Transformation',
-      description: 'Transform your business processes with modern digital solutions. Streamline operations and improve efficiency.',
+      title: 'Side Window Repair',
+      description: 'Expert repair and replacement of side windows and door glass. Fast service to get you back on the road safely.',
       icon: (
         <svg className="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 10V3L4 14h7v7l9-11h-7z" />
+          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
         </svg>
       ),
-      color: 'from-indigo-500 to-indigo-600',
+      color: 'from-yellow-500 to-amber-500',
     },
     {
-      title: 'Project Management',
-      description: 'Expert project management to ensure your initiatives are delivered on time and within budget.',
+      title: 'Rear Window Replacement',
+      description: 'Professional rear window replacement for all vehicle makes and models. Quality glass and expert installation.',
       icon: (
         <svg className="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-6 9l2 2 4-4" />
         </svg>
       ),
-      color: 'from-pink-500 to-pink-600',
+      color: 'from-amber-500 to-yellow-500',
     },
     {
-      title: 'Training & Support',
-      description: 'Comprehensive training programs and ongoing support to ensure your team is equipped for success.',
+      title: 'Emergency Service',
+      description: '24/7 emergency auto glass repair service. We understand that glass damage can happen anytime - we\'re here to help.',
       icon: (
         <svg className="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253" />
+          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
         </svg>
       ),
-      color: 'from-cyan-500 to-cyan-600',
+      color: 'from-yellow-500 to-amber-500',
     },
     {
-      title: 'Strategic Planning',
-      description: 'Develop comprehensive strategies that align with your business goals and drive sustainable growth.',
+      title: 'Mobile Service',
+      description: 'We come to you! Mobile auto glass repair service available in Dora and surrounding areas. Convenient and professional.',
       icon: (
         <svg className="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 20l-5.447-2.724A1 1 0 013 16.382V5.618a1 1 0 011.447-.894L9 7m0 13l6-3m-6 3V7m6 10l4.553 2.276A1 1 0 0021 18.382V7.618a1 1 0 00-.553-.894L15 4m0 13V4m0 0L9 7" />
+          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
+          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
         </svg>
       ),
-      color: 'from-teal-500 to-teal-600',
+      color: 'from-amber-500 to-yellow-500',
     },
   ];
 
   return (
-    <div className="min-h-screen pt-24 pb-20 px-4 sm:px-6 lg:px-8">
+    <div className="min-h-screen pt-24 pb-20 px-4 sm:px-6 lg:px-8 bg-yellow-50">
       <div className="max-w-7xl mx-auto">
         {/* Hero Section */}
         <div className="text-center mb-16">
-          <h1 className="text-5xl md:text-6xl font-bold mb-6 bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">
+          <h1 className="text-5xl md:text-6xl font-bold mb-6 bg-gradient-to-r from-yellow-600 to-amber-600 bg-clip-text text-transparent">
             Our Services
           </h1>
-          <p className="text-xl text-gray-600 dark:text-gray-300 max-w-3xl mx-auto">
-            Comprehensive solutions tailored to your business needs
+          <p className="text-xl text-amber-800 max-w-3xl mx-auto">
+            Professional auto glass repair and replacement services in Dora, Lebanon
           </p>
         </div>
 
@@ -85,15 +86,15 @@ export default function Services() {
           {services.map((service, index) => (
             <div
               key={index}
-              className="bg-white dark:bg-gray-800 rounded-xl p-8 shadow-lg hover:shadow-xl transition-shadow border border-gray-200 dark:border-gray-700"
+              className="bg-white rounded-xl p-8 shadow-lg hover:shadow-xl transition-shadow border border-yellow-200"
             >
-              <div className={`w-16 h-16 bg-gradient-to-r ${service.color} rounded-lg flex items-center justify-center text-white mb-6`}>
+              <div className={`w-16 h-16 bg-gradient-to-r ${service.color} rounded-lg flex items-center justify-center text-white mb-6 shadow-md`}>
                 {service.icon}
               </div>
-              <h3 className="text-2xl font-bold mb-4 text-gray-900 dark:text-white">
+              <h3 className="text-2xl font-bold mb-4 text-amber-900">
                 {service.title}
               </h3>
-              <p className="text-gray-600 dark:text-gray-300">
+              <p className="text-amber-800">
                 {service.description}
               </p>
             </div>
@@ -101,14 +102,14 @@ export default function Services() {
         </div>
 
         {/* CTA Section */}
-        <div className="bg-gradient-to-r from-blue-600 to-purple-600 rounded-xl p-12 text-center text-white">
+        <div className="bg-gradient-to-r from-yellow-500 to-amber-500 rounded-xl p-12 text-center text-white shadow-lg">
           <h2 className="text-4xl font-bold mb-6">Ready to Get Started?</h2>
           <p className="text-xl mb-8 max-w-2xl mx-auto">
-            Let's discuss how our services can help transform your business
+            Contact us today for a free quote on your auto glass repair or replacement needs
           </p>
           <a
             href="/contact"
-            className="inline-block px-8 py-4 bg-white text-blue-600 rounded-lg font-semibold hover:shadow-xl transform hover:scale-105 transition-all duration-200"
+            className="inline-block px-8 py-4 bg-white text-amber-600 rounded-lg font-semibold hover:shadow-xl transform hover:scale-105 transition-all duration-200 shadow-md"
           >
             Contact Us
           </a>
@@ -117,4 +118,3 @@ export default function Services() {
     </div>
   );
 }
-
