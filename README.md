@@ -1,36 +1,79 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Makoukji Website
+
+A modern, beautiful website for [makoukji.com](https://makoukji.com) built with Next.js, TypeScript, and Tailwind CSS.
+
+## Features
+
+- 🎨 Modern, responsive design with beautiful gradients
+- 🌙 Dark mode support
+- ⚡ Fast performance with Next.js 16
+- 📱 Fully responsive mobile-first design
+- 🎯 SEO optimized
+- 🚀 Ready for Vercel deployment
+
+## Pages
+
+- **Home** - Beautiful hero section with features and call-to-action
+- **About** - Company story, values, and mission
+- **Services** - Comprehensive service offerings
+- **Contact** - Contact form and business information
 
 ## Getting Started
 
-First, run the development server:
+First, install the dependencies:
+
+```bash
+npm install
+```
+
+Then, run the development server:
 
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Build for Production
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+```bash
+npm run build
+npm start
+```
 
 ## Deploy on Vercel
 
 The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+1. Push your code to GitHub
+2. Import your repository in Vercel
+3. Vercel will automatically detect Next.js and configure the deployment
+4. Your site will be live!
+
+## Tech Stack
+
+- **Next.js 16** - React framework for production
+- **TypeScript** - Type-safe JavaScript
+- **Tailwind CSS** - Utility-first CSS framework
+- **Geist Font** - Modern font family
+
+## Project Structure
+
+```
+makoukji/
+├── app/              # Next.js app directory
+│   ├── about/       # About page
+│   ├── services/    # Services page
+│   ├── contact/     # Contact page
+│   ├── layout.tsx   # Root layout
+│   ├── page.tsx     # Home page
+│   └── globals.css  # Global styles
+├── components/       # React components
+│   ├── Navbar.tsx   # Navigation component
+│   └── Footer.tsx   # Footer component
+└── public/          # Static assets
+```
+
+## License
+
+© 2024 Makoukji. All rights reserved.
