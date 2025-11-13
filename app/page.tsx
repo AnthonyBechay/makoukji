@@ -12,6 +12,16 @@ export default function Home() {
         <div className="relative max-w-7xl mx-auto">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <div className="text-white">
+              <div className="mb-6">
+                <Image 
+                  src="/logo.svg" 
+                  alt="Makoukji Auto Glass Logo" 
+                  width={250} 
+                  height={75}
+                  className="h-16 w-auto mb-4"
+                  priority
+                />
+              </div>
               <div className="inline-block mb-4 px-4 py-2 bg-[#2596be] rounded-lg futuristic-border">
                 <span className="text-sm font-bold">PROFESSIONAL AUTO GLASS</span>
               </div>

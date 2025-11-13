@@ -1,0 +1,17 @@
+<svg width="200" height="60" viewBox="0 0 200 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background circle -->
+  <circle cx="30" cy="30" r="25" fill="#2596be" opacity="0.2"/>
+  <circle cx="30" cy="30" r="20" fill="#FFD700" opacity="0.3"/>
+  
+  <!-- Glass icon -->
+  <rect x="15" y="15" width="30" height="30" rx="3" stroke="#2596be" stroke-width="2.5" fill="none"/>
+  <line x1="20" y1="20" x2="25" y2="20" stroke="#2596be" stroke-width="2"/>
+  <line x1="20" y1="25" x2="30" y2="25" stroke="#2596be" stroke-width="2"/>
+  <line x1="20" y1="30" x2="28" y2="30" stroke="#2596be" stroke-width="2"/>
+  <line x1="20" y1="35" x2="32" y2="35" stroke="#2596be" stroke-width="2"/>
+  
+  <!-- Text -->
+  <text x="55" y="25" font-family="Arial, sans-serif" font-size="18" font-weight="bold" fill="#FFD700">Makoukji</text>
+  <text x="55" y="42" font-family="Arial, sans-serif" font-size="12" fill="#2596be">Auto Glass</text>
+</svg>
+

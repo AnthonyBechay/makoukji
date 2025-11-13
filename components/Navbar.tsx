@@ -1,6 +1,7 @@
 'use client';
 
 import Link from 'next/link';
+import Image from 'next/image';
 import { useState } from 'react';
 
 export default function Navbar() {
@@ -9,11 +10,17 @@ export default function Navbar() {
   return (
     <nav className="fixed top-0 left-0 right-0 z-50 bg-white/95 backdrop-blur-md border-b-2 border-[#2596be] shadow-lg">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex justify-between items-center h-16">
+        <div className="flex justify-between items-center h-20">
           <div className="flex-shrink-0">
-            <Link href="/" className="text-2xl font-bold">
-              <span className="text-[#FFD700]">Makoukji</span>
-              <span className="text-black"> Auto Glass</span>
+            <Link href="/" className="flex items-center space-x-3 hover:opacity-80 transition-opacity">
+              <Image 
+                src="/logo.svg" 
+                alt="Makoukji Auto Glass Logo" 
+                width={180} 
+                height={54}
+                className="h-12 w-auto"
+                priority
+              />
             </Link>
           </div>
           
@@ -28,6 +35,9 @@ export default function Navbar() {
               </Link>
               <Link href="/services" className="text-black hover:text-[#2596be] px-3 py-2 text-sm font-bold transition-colors border-b-2 border-transparent hover:border-[#FFD700]">
                 Services
+              </Link>
+              <Link href="/collection" className="text-black hover:text-[#2596be] px-3 py-2 text-sm font-bold transition-colors border-b-2 border-transparent hover:border-[#FFD700]">
+                Collection
               </Link>
               <Link href="/contact" className="text-black hover:text-[#2596be] px-3 py-2 text-sm font-bold transition-colors border-b-2 border-transparent hover:border-[#FFD700]">
                 Contact
@@ -72,6 +82,15 @@ export default function Navbar() {
       {isOpen && (
         <div className="md:hidden">
           <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3 bg-white border-t-2 border-[#2596be]">
+            <div className="px-3 py-2 border-b border-gray-200 mb-2">
+              <Image 
+                src="/logo.svg" 
+                alt="Makoukji Auto Glass Logo" 
+                width={150} 
+                height={45}
+                className="h-10 w-auto"
+              />
+            </div>
             <Link
               href="/"
               className="block px-3 py-2 text-base font-bold text-black hover:text-[#2596be] hover:bg-[#FFD700]/10"
@@ -92,6 +111,13 @@ export default function Navbar() {
               onClick={() => setIsOpen(false)}
             >
               Services
+            </Link>
+            <Link
+              href="/collection"
+              className="block px-3 py-2 text-base font-bold text-black hover:text-[#2596be] hover:bg-[#FFD700]/10"
+              onClick={() => setIsOpen(false)}
+            >
+              Collection
             </Link>
             <Link
               href="/contact"
