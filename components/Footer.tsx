@@ -3,157 +3,38 @@ import Image from 'next/image';
 
 export default function Footer() {
   return (
-    <footer className="bg-black border-t-2 border-[#2596be] relative overflow-hidden">
-      <div className="absolute inset-0 opacity-10">
-        <div className="absolute inset-0 bg-gradient-to-r from-[#2596be] to-[#FFD700]"></div>
+    <footer className="bg-gradient-to-br from-black via-gray-900 to-black border-t-2 border-[#2596be] relative overflow-hidden">
+      {/* Animated Background */}
+      <div className="absolute inset-0 overflow-hidden">
+        <div className="absolute top-0 left-1/4 w-96 h-96 bg-[#2596be] rounded-full mix-blend-multiply filter blur-3xl opacity-10"></div>
+        <div className="absolute top-0 right-1/4 w-96 h-96 bg-[#FFD700] rounded-full mix-blend-multiply filter blur-3xl opacity-10"></div>
       </div>
-      <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-8">
+
+      {/* Grid Pattern */}
+      <div className="absolute inset-0 bg-[linear-gradient(to_right,#80808005_1px,transparent_1px),linear-gradient(to_bottom,#80808005_1px,transparent_1px)] bg-[size:24px_24px]"></div>
+
+      <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-12">
           {/* Company Info */}
-          <div className="col-span-1 md:col-span-2">
-            <div className="mb-4">
+          <div className="col-span-1 md:col-span-2 lg:col-span-2">
+            <div className="mb-6">
               <Image 
                 src="/logo.svg" 
                 alt="Makoukji Auto Glass Logo" 
-                width={200} 
-                height={60}
-                className="h-12 w-auto mb-4"
+                width={220} 
+                height={66}
+                className="h-16 w-auto mb-6"
               />
             </div>
-            <p className="text-gray-300 mb-4 leading-relaxed">
-              Ets. Georges Makoukji for autoglass - Founded in 1964. The oldest, the best, and the reference in Lebanon for autoglass services.
+            <p className="text-gray-300 mb-6 leading-relaxed text-lg">
+              Ets. Georges Makoukji for autoglass - Founded in <strong className="text-[#FFD700]">1964</strong>. The oldest, the best, and the reference in Lebanon for autoglass services.
             </p>
-            <p className="text-sm text-gray-400">
-              © {new Date().getFullYear()} Ets. Georges Makoukji. All rights reserved.
-            </p>
-          </div>
-          
-          {/* Quick Links */}
-          <div>
-            <h4 className="text-sm font-bold text-[#FFD700] uppercase tracking-wider mb-4">
-              Quick Links
-            </h4>
-            <ul className="space-y-2">
-              <li>
-                <Link href="/" className="text-gray-300 hover:text-[#FFD700] transition-colors font-medium">
-                  Home
-                </Link>
-              </li>
-              <li>
-                <Link href="/about" className="text-gray-300 hover:text-[#FFD700] transition-colors font-medium">
-                  About
-                </Link>
-              </li>
-              <li>
-                <Link href="/services" className="text-gray-300 hover:text-[#FFD700] transition-colors font-medium">
-                  Services
-                </Link>
-              </li>
-              <li>
-                <Link href="/collection" className="text-gray-300 hover:text-[#FFD700] transition-colors font-medium">
-                  Collection
-                </Link>
-              </li>
-              <li>
-                <Link href="/contact" className="text-gray-300 hover:text-[#FFD700] transition-colors font-medium">
-                  Contact
-                </Link>
-              </li>
-            </ul>
-          </div>
-          
-          {/* Contact Information */}
-          <div>
-            <h4 className="text-sm font-bold text-[#FFD700] uppercase tracking-wider mb-4">
-              Contact Us
-            </h4>
-            
-            {/* Phone Numbers */}
-            <div className="mb-6">
-              <h5 className="text-xs font-bold text-[#2596be] uppercase tracking-wider mb-3">Phone Number</h5>
-              <ul className="space-y-2">
-                <li>
-                  <a href="tel:+9611256297" className="text-gray-300 hover:text-[#FFD700] transition-colors font-medium flex items-center">
-                    <svg className="w-4 h-4 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
-                    </svg>
-                    00961-1-256297
-                  </a>
-                </li>
-                <li>
-                  <a href="tel:+9611256298" className="text-gray-300 hover:text-[#FFD700] transition-colors font-medium flex items-center">
-                    <svg className="w-4 h-4 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
-                    </svg>
-                    00961-1-256298
-                  </a>
-                </li>
-                <li>
-                  <a href="tel:+9611247143" className="text-gray-300 hover:text-[#FFD700] transition-colors font-medium flex items-center">
-                    <svg className="w-4 h-4 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
-                    </svg>
-                    00961-1-247143
-                  </a>
-                </li>
-                <li>
-                  <a href="tel:+9613897157" className="text-gray-300 hover:text-[#FFD700] transition-colors font-medium flex items-center">
-                    <svg className="w-4 h-4 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
-                    </svg>
-                    00961-3-897157
-                  </a>
-                </li>
-              </ul>
-            </div>
-
-            {/* Address */}
-            <div className="mb-6">
-              <h5 className="text-xs font-bold text-[#2596be] uppercase tracking-wider mb-3">Address</h5>
-              <div className="text-gray-300 font-medium leading-relaxed">
-                <p>Dora Trade Center</p>
-                <p>Dora Highway</p>
-                <p>Beirut, Lebanon</p>
-              </div>
-            </div>
-
-            {/* Email */}
-            <div>
-              <h5 className="text-xs font-bold text-[#2596be] uppercase tracking-wider mb-3">Email Us</h5>
-              <ul className="space-y-2">
-                <li>
-                  <a href="mailto:info@makoukji.com" className="text-gray-300 hover:text-[#FFD700] transition-colors font-medium flex items-center">
-                    <svg className="w-4 h-4 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
-                    </svg>
-                    info@makoukji.com
-                  </a>
-                </li>
-                <li>
-                  <a href="mailto:georges@makoukji.com" className="text-gray-300 hover:text-[#FFD700] transition-colors font-medium flex items-center">
-                    <svg className="w-4 h-4 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
-                    </svg>
-                    georges@makoukji.com
-                  </a>
-                </li>
-              </ul>
-            </div>
-          </div>
-        </div>
-
-        {/* Social Media Section */}
-        <div className="border-t-2 border-[#2596be]/30 pt-8 mt-8">
-          <div className="flex flex-col md:flex-row justify-between items-center">
-            <h4 className="text-sm font-bold text-[#FFD700] uppercase tracking-wider mb-4 md:mb-0">
-              Stay Connected
-            </h4>
             <div className="flex space-x-4">
               <a
                 href="https://facebook.com"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="w-12 h-12 bg-[#2596be] rounded-lg flex items-center justify-center hover:bg-[#FFD700] hover:text-black transition-all duration-200 shadow-lg group"
+                className="w-12 h-12 bg-gradient-to-br from-[#2596be] to-[#1e7a9a] rounded-xl flex items-center justify-center hover:from-[#FFD700] hover:to-[#FFA500] transition-all duration-300 shadow-xl group"
                 aria-label="Facebook"
               >
                 <svg className="w-6 h-6 text-white group-hover:text-black transition-colors" fill="currentColor" viewBox="0 0 24 24">
@@ -164,13 +45,113 @@ export default function Footer() {
                 href="https://instagram.com"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="w-12 h-12 bg-[#2596be] rounded-lg flex items-center justify-center hover:bg-[#FFD700] hover:text-black transition-all duration-200 shadow-lg group"
+                className="w-12 h-12 bg-gradient-to-br from-[#2596be] to-[#1e7a9a] rounded-xl flex items-center justify-center hover:from-[#FFD700] hover:to-[#FFA500] transition-all duration-300 shadow-xl group"
                 aria-label="Instagram"
               >
                 <svg className="w-6 h-6 text-white group-hover:text-black transition-colors" fill="currentColor" viewBox="0 0 24 24">
                   <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
                 </svg>
               </a>
+            </div>
+            <p className="text-sm text-gray-400 mt-6">
+              © {new Date().getFullYear()} Ets. Georges Makoukji. All rights reserved.
+            </p>
+          </div>
+          
+          {/* Quick Links */}
+          <div>
+            <h4 className="text-sm font-bold text-[#FFD700] uppercase tracking-wider mb-6 text-lg">
+              Quick Links
+            </h4>
+            <ul className="space-y-3">
+              {[
+                { href: '/', label: 'Home' },
+                { href: '/about', label: 'About' },
+                { href: '/services', label: 'Services' },
+                { href: '/collection', label: 'Collection' },
+                { href: '/contact', label: 'Contact' },
+              ].map((item) => (
+                <li key={item.href}>
+                  <Link 
+                    href={item.href} 
+                    className="text-gray-300 hover:text-[#FFD700] transition-colors font-medium text-lg group flex items-center"
+                  >
+                    <span className="w-0 group-hover:w-2 h-0.5 bg-[#FFD700] mr-0 group-hover:mr-2 transition-all duration-300"></span>
+                    {item.label}
+                  </Link>
+                </li>
+              ))}
+            </ul>
+          </div>
+          
+          {/* Contact Information */}
+          <div>
+            <h4 className="text-sm font-bold text-[#FFD700] uppercase tracking-wider mb-6 text-lg">
+              Contact Us
+            </h4>
+            
+            {/* Phone Numbers */}
+            <div className="mb-6">
+              <h5 className="text-xs font-bold text-[#2596be] uppercase tracking-wider mb-4">Phone Number</h5>
+              <ul className="space-y-2">
+                {['00961-1-256297', '00961-1-256298', '00961-1-247143', '00961-3-897157'].map((phone, index) => (
+                  <li key={index}>
+                    <a 
+                      href={`tel:+${phone.replace(/-/g, '')}`} 
+                      className="text-gray-300 hover:text-[#FFD700] transition-colors font-medium flex items-center group"
+                    >
+                      <svg className="w-4 h-4 mr-2 opacity-0 group-hover:opacity-100 transition-opacity" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
+                      </svg>
+                      {phone}
+                    </a>
+                  </li>
+                ))}
+              </ul>
+            </div>
+
+            {/* Address */}
+            <div className="mb-6">
+              <h5 className="text-xs font-bold text-[#2596be] uppercase tracking-wider mb-4">Address</h5>
+              <div className="text-gray-300 font-medium leading-relaxed">
+                <p>Dora Trade Center</p>
+                <p>Dora Highway</p>
+                <p>Beirut, Lebanon</p>
+              </div>
+            </div>
+
+            {/* Email */}
+            <div>
+              <h5 className="text-xs font-bold text-[#2596be] uppercase tracking-wider mb-4">Email Us</h5>
+              <ul className="space-y-2">
+                {['info@makoukji.com', 'georges@makoukji.com'].map((email, index) => (
+                  <li key={index}>
+                    <a 
+                      href={`mailto:${email}`} 
+                      className="text-gray-300 hover:text-[#FFD700] transition-colors font-medium flex items-center group"
+                    >
+                      <svg className="w-4 h-4 mr-2 opacity-0 group-hover:opacity-100 transition-opacity" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+                      </svg>
+                      {email}
+                    </a>
+                  </li>
+                ))}
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        {/* Bottom Bar */}
+        <div className="border-t-2 border-[#2596be]/30 pt-8 mt-8">
+          <div className="flex flex-col md:flex-row justify-between items-center">
+            <p className="text-gray-400 text-sm mb-4 md:mb-0">
+              Proudly serving Lebanon since 1964
+            </p>
+            <div className="flex items-center space-x-2">
+              <span className="text-gray-400 text-sm">Made with</span>
+              <span className="text-[#FFD700]">❤️</span>
+              <span className="text-gray-400 text-sm">in Lebanon</span>
             </div>
           </div>
         </div>
