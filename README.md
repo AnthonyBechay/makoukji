@@ -1,5 +1,4 @@
-# Makoukji Website
-
+# Makoukji Website First mako developer commit
 A modern, beautiful website for [makoukji.com](https://makoukji.com) built with Next.js, TypeScript, and Tailwind CSS.
 
 ## Features
