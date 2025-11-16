@@ -52,63 +52,60 @@ export default function Home() {
 
             {/* Right Visual */}
             <div className="relative h-[500px] lg:h-[600px] rounded-lg overflow-hidden shadow-xl">
-              <div className="absolute inset-0 bg-gradient-to-br from-gray-100 via-white to-gray-50">
-                {/* Decorative geometric pattern */}
-                <div className="absolute inset-0 opacity-5">
-                  <svg className="w-full h-full" xmlns="http://www.w3.org/2000/svg">
-                    <defs>
-                      <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
-                        <path d="M 40 0 L 0 0 0 40" fill="none" stroke="#2596be" strokeWidth="1"/>
-                      </pattern>
-                    </defs>
-                    <rect width="100%" height="100%" fill="url(#grid)" />
-                  </svg>
+              <div className="absolute inset-0 bg-gradient-to-br from-[#2596be] via-[#1e7a9a] to-[#2596be]">
+                {/* Animated background pattern */}
+                <div className="absolute inset-0 opacity-10">
+                  <div className="absolute inset-0" style={{
+                    backgroundImage: `radial-gradient(circle at 2px 2px, white 1px, transparent 0)`,
+                    backgroundSize: '40px 40px'
+                  }}></div>
                 </div>
                 
-                {/* Car silhouette illustration */}
-                <div className="absolute inset-0 flex items-center justify-center p-8">
-                  <div className="relative w-full max-w-md">
-                    {/* Car outline */}
-                    <svg viewBox="0 0 400 200" className="w-full h-auto">
-                      {/* Car body */}
-                      <path
-                        d="M 50 120 Q 50 100 80 100 L 120 100 L 140 80 L 260 80 L 280 100 L 320 100 Q 350 100 350 120 L 350 160 Q 350 180 320 180 L 280 180 L 280 200 L 260 200 L 260 180 L 140 180 L 140 200 L 120 200 L 120 180 L 80 180 Q 50 180 50 160 Z"
-                        fill="none"
-                        stroke="#2596be"
-                        strokeWidth="3"
-                        className="drop-shadow-lg"
-                      />
-                      {/* Windshield */}
-                      <path
-                        d="M 120 100 L 140 80 L 260 80 L 280 100"
-                        fill="rgba(37, 150, 190, 0.1)"
-                        stroke="#2596be"
-                        strokeWidth="2"
-                      />
-                      {/* Side windows */}
-                      <rect x="150" y="100" width="50" height="60" fill="rgba(37, 150, 190, 0.1)" stroke="#2596be" strokeWidth="2" rx="2" />
-                      <rect x="210" y="100" width="50" height="60" fill="rgba(37, 150, 190, 0.1)" stroke="#2596be" strokeWidth="2" rx="2" />
-                      {/* Wheels */}
-                      <circle cx="120" cy="180" r="20" fill="#1e7a9a" opacity="0.3" />
-                      <circle cx="280" cy="180" r="20" fill="#1e7a9a" opacity="0.3" />
-                    </svg>
-                    
-                    {/* Floating badge */}
-                    <div className="absolute -top-4 -right-4 bg-[#2596be] text-white rounded-full w-24 h-24 flex flex-col items-center justify-center shadow-xl transform rotate-12">
-                      <span className="text-2xl font-bold">60+</span>
-                      <span className="text-xs">Years</span>
+                {/* Glass panels illustration */}
+                <div className="absolute inset-0 flex items-center justify-center p-12">
+                  <div className="relative w-full max-w-lg">
+                    {/* Main glass panel */}
+                    <div className="relative">
+                      {/* Large windshield shape */}
+                      <div className="relative mx-auto w-64 h-40 bg-white/20 backdrop-blur-md rounded-lg border-2 border-white/30 shadow-2xl transform rotate-[-2deg]">
+                        <div className="absolute inset-0 bg-gradient-to-br from-white/10 to-transparent rounded-lg"></div>
+                        <div className="absolute top-2 left-2 right-2 h-1 bg-white/20 rounded"></div>
+                        <div className="absolute bottom-2 left-2 right-2 h-1 bg-white/20 rounded"></div>
+                      </div>
+                      
+                      {/* Smaller side panels */}
+                      <div className="absolute -top-8 -right-8 w-32 h-24 bg-white/15 backdrop-blur-sm rounded-lg border-2 border-white/25 shadow-xl transform rotate-12"></div>
+                      <div className="absolute -bottom-8 -left-8 w-32 h-24 bg-white/15 backdrop-blur-sm rounded-lg border-2 border-white/25 shadow-xl transform -rotate-12"></div>
                     </div>
                     
-                    {/* Quality badge */}
-                    <div className="absolute -bottom-4 -left-4 bg-white border-4 border-[#2596be] rounded-lg px-4 py-2 shadow-xl">
-                      <div className="flex items-center gap-2">
-                        <svg className="w-6 h-6 text-[#2596be]" fill="currentColor" viewBox="0 0 20 20">
-                          <path fillRule="evenodd" d="M6.267 3.455a3.066 3.066 0 001.745-.723 3.066 3.066 0 013.976 0 3.066 3.066 0 001.745.723 3.066 3.066 0 012.812 2.812c.051.643.304 1.254.723 1.745a3.066 3.066 0 010 3.976 3.066 3.066 0 00-.723 1.745 3.066 3.066 0 01-2.812 2.812 3.066 3.066 0 00-1.745.723 3.066 3.066 0 01-3.976 0 3.066 3.066 0 00-1.745-.723 3.066 3.066 0 01-2.812-2.812 3.066 3.066 0 00-.723-1.745 3.066 3.066 0 010-3.976 3.066 3.066 0 00.723-1.745 3.066 3.066 0 012.812-2.812zm7.44 5.252a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
-                        </svg>
-                        <span className="font-bold text-gray-900">Quality</span>
+                    {/* Floating stats */}
+                    <div className="absolute top-0 right-0 bg-white/95 backdrop-blur-sm rounded-2xl p-6 shadow-2xl transform -translate-y-4">
+                      <div className="text-center">
+                        <div className="text-4xl font-bold text-[#2596be] mb-1">60+</div>
+                        <div className="text-sm font-semibold text-gray-700">Years</div>
+                      </div>
+                    </div>
+                    
+                    {/* Quality indicator */}
+                    <div className="absolute bottom-0 left-0 bg-white/95 backdrop-blur-sm rounded-2xl p-4 shadow-2xl transform translate-y-4">
+                      <div className="flex items-center gap-3">
+                        <div className="w-12 h-12 bg-[#2596be] rounded-full flex items-center justify-center">
+                          <svg className="w-7 h-7 text-white" fill="currentColor" viewBox="0 0 20 20">
+                            <path fillRule="evenodd" d="M6.267 3.455a3.066 3.066 0 001.745-.723 3.066 3.066 0 013.976 0 3.066 3.066 0 001.745.723 3.066 3.066 0 012.812 2.812c.051.643.304 1.254.723 1.745a3.066 3.066 0 010 3.976 3.066 3.066 0 00-.723 1.745 3.066 3.066 0 01-2.812 2.812 3.066 3.066 0 00-1.745.723 3.066 3.066 0 01-3.976 0 3.066 3.066 0 00-1.745-.723 3.066 3.066 0 01-2.812-2.812 3.066 3.066 0 00-.723-1.745 3.066 3.066 0 010-3.976 3.066 3.066 0 00.723-1.745 3.066 3.066 0 012.812-2.812zm7.44 5.252a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
+                          </svg>
+                        </div>
+                        <div>
+                          <div className="text-lg font-bold text-gray-900">Premium</div>
+                          <div className="text-xs text-gray-600">Quality</div>
+                        </div>
                       </div>
                     </div>
                   </div>
+                </div>
+                
+                {/* Shimmer effect */}
+                <div className="absolute inset-0 overflow-hidden">
+                  <div className="absolute inset-0 shimmer transform -skew-x-12"></div>
                 </div>
               </div>
             </div>
