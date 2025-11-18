@@ -123,43 +123,6 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Services Overview - Professional */}
-      <section className="py-20 px-4 sm:px-6 lg:px-8 bg-white">
-        <div className="max-w-7xl mx-auto">
-          <div className="text-center mb-16">
-            <h2 className="text-4xl md:text-5xl font-bold mb-4 text-gray-900">
-              Comprehensive Autoglass Solutions
-            </h2>
-            <p className="text-xl text-gray-600 max-w-2xl mx-auto">
-              We provide autoglass services for all vehicle types
-            </p>
-          </div>
-          
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-6 mb-12">
-            {['ROOF GLASS', 'WINDSHIELD', 'SIDE WINDOW', 'RUBBER', 'SUPER CARS', 'TRUCK', 'HEAVY MACHINERY', 'BUS'].map((service, index) => (
-              <div
-                key={index}
-                className="bg-gray-50 p-6 rounded-lg border border-gray-200 text-center hover:border-[#fae633] hover:shadow-md transition-all duration-200"
-              >
-                <h3 className="text-sm font-semibold text-gray-900">{service}</h3>
-              </div>
-            ))}
-          </div>
-
-          <div className="bg-[#fae633] rounded-lg p-8 text-center text-white">
-            <p className="text-lg mb-6">
-              Plus specialized services for boats, yachts, and all types of vehicles
-            </p>
-            <Link
-              href="/services"
-              className="inline-block px-8 py-3 bg-white text-[#fae633] rounded-md font-semibold hover:bg-gray-100 transition-colors duration-200"
-            >
-              View All Services
-            </Link>
-          </div>
-        </div>
-      </section>
-
       {/* Why Choose Us - Professional */}
       <section className="py-20 px-4 sm:px-6 lg:px-8 bg-gray-50">
         <div className="max-w-7xl mx-auto">
@@ -213,6 +176,43 @@ export default function Home() {
                 <p className="text-gray-600 leading-relaxed">{feature.description}</p>
               </div>
             ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Services Overview - Professional */}
+      <section className="py-20 px-4 sm:px-6 lg:px-8 bg-white">
+        <div className="max-w-7xl mx-auto">
+          <div className="text-center mb-16">
+            <h2 className="text-4xl md:text-5xl font-bold mb-4 text-gray-900">
+              Comprehensive Autoglass Solutions
+            </h2>
+            <p className="text-xl text-gray-600 max-w-2xl mx-auto">
+              We provide autoglass services for all vehicle types
+            </p>
+          </div>
+          
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-6 mb-12">
+            {['ROOF GLASS', 'WINDSHIELD', 'SIDE WINDOW', 'RUBBER', 'SUPER CARS', 'TRUCK', 'HEAVY MACHINERY', 'BUS'].map((service, index) => (
+              <div
+                key={index}
+                className="bg-gray-50 p-6 rounded-lg border border-gray-200 text-center hover:border-[#fae633] hover:shadow-md transition-all duration-200"
+              >
+                <h3 className="text-sm font-semibold text-gray-900">{service}</h3>
+              </div>
+            ))}
+          </div>
+
+          <div className="bg-[#fae633] rounded-lg p-8 text-center text-white">
+            <p className="text-lg mb-6">
+              Plus specialized services for boats, yachts, and all types of vehicles
+            </p>
+            <Link
+              href="/services"
+              className="inline-block px-8 py-3 bg-white text-[#fae633] rounded-md font-semibold hover:bg-gray-100 transition-colors duration-200"
+            >
+              View All Services
+            </Link>
           </div>
         </div>
       </section>
