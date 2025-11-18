@@ -14,17 +14,6 @@ export default function Home() {
                 ESTABLISHED 1964 • LEBANON'S MOST RENOWNED AUTO GLASS COMPANY
               </div>
               
-              <div className="mb-6">
-                <Image 
-                  src="/logo-nobackground.png" 
-                  alt="Makoukji Auto Glass Logo" 
-                  width={560} 
-                  height={168}
-                  className="h-32 w-auto mb-6"
-                  priority
-                />
-              </div>
-
               <h1 className="text-5xl md:text-6xl font-bold leading-tight text-gray-900">
                 Lebanon's Trusted Auto Glass Experts
                 <span className="block text-[#fae633] mt-2">Since 1964</span>
