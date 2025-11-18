@@ -50,10 +50,9 @@ export default function Navbar() {
                 <Link
                   key={item.href}
                   href={item.href}
-                  className="relative px-5 py-2 text-sm font-semibold text-white hover:text-gray-100 transition-colors duration-200"
+                  className="relative px-5 py-2 text-sm font-semibold bg-black text-white rounded-md hover:bg-gray-900 transition-colors duration-200"
                 >
                   {item.label}
-                  <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-white transition-all duration-300 group-hover:w-full hover:w-full"></span>
                 </Link>
               ))}
             </div>
@@ -125,7 +124,7 @@ export default function Navbar() {
               <Link
                 key={item.href}
                 href={item.href}
-                className="block px-4 py-3 text-base font-semibold text-white hover:text-gray-100 hover:bg-[#d4c82a] rounded-md transition-colors"
+                className="block px-4 py-3 text-base font-semibold bg-black text-white rounded-md hover:bg-gray-900 transition-colors"
                 onClick={() => setIsOpen(false)}
               >
                 {item.label}
