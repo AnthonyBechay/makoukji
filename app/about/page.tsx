@@ -12,20 +12,20 @@ export default function About() {
       {/* Hero Section */}
       <section className="py-16 mb-16 border-b border-gray-200">
         <div className="max-w-7xl mx-auto text-center">
-          <div className="inline-block mb-6 px-4 py-2 bg-[#2596be] text-white rounded-md text-sm font-semibold">
+          <div className="inline-block mb-6 px-4 py-2 bg-[#FFA500] text-white rounded-md text-sm font-semibold">
             ABOUT US
           </div>
           <h1 className="text-5xl md:text-6xl font-bold mb-6 text-gray-900">
             Lebanon's Most Renowned Auto Glass Company
           </h1>
           <div className="flex flex-wrap justify-center gap-4 mb-8">
-            <div className="px-6 py-3 bg-[#2596be] text-white rounded-md font-semibold shadow-md">
+            <div className="px-6 py-3 bg-[#FFA500] text-white rounded-md font-semibold shadow-md">
               Established 1964
             </div>
             <div className="px-6 py-3 bg-gray-900 text-white rounded-md font-semibold shadow-md">
               60+ Years of Excellence
             </div>
-            <div className="px-6 py-3 bg-[#2596be] text-white rounded-md font-semibold shadow-md">
+            <div className="px-6 py-3 bg-[#FFA500] text-white rounded-md font-semibold shadow-md">
               Lebanon's Reference
             </div>
           </div>
@@ -40,7 +40,7 @@ export default function About() {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center mb-16">
           {/* Content */}
           <div className="space-y-6">
-            <div className="inline-block px-4 py-2 bg-[#2596be] text-white rounded-md text-sm font-semibold">
+            <div className="inline-block px-4 py-2 bg-[#FFA500] text-white rounded-md text-sm font-semibold">
               OUR LEGACY
             </div>
             <h2 className="text-4xl md:text-5xl font-bold text-gray-900">
@@ -48,16 +48,16 @@ export default function About() {
             </h2>
             <div className="prose prose-lg max-w-none">
               <p className="text-lg text-gray-700 mb-6 leading-relaxed">
-                <strong className="text-[#2596be]">Ets. Georges Makoukji for autoglass</strong> was first founded in <strong className="text-gray-900">1964</strong> by Mr. Georges Makoukji on Dora highway towards the city of Beirut. We have successfully navigated all challenges and obstacles in Lebanon over the past six decades, establishing ourselves as the country's most trusted and renowned autoglass company.
+                <strong className="text-[#FFA500]">Ets. Georges Makoukji for autoglass</strong> was first founded in <strong className="text-gray-900">1964</strong> by Mr. Georges Makoukji on Dora highway towards the city of Beirut. We have successfully navigated all challenges and obstacles in Lebanon over the past six decades, establishing ourselves as the country's most trusted and renowned autoglass company.
               </p>
               <p className="text-lg text-gray-700 leading-relaxed">
-                In the beginning of the 21st century, the present Owner and General Manager Mr. Joseph Makoukji expanded the business into a newer and bigger operation by adding a new branch and a <strong className="text-[#2596be]">1500 square meters warehouse</strong>, ensuring we maintain the most comprehensive inventory of autoglass in Lebanon.
+                In the beginning of the 21st century, the present Owner and General Manager Mr. Joseph Makoukji expanded the business into a newer and bigger operation by adding a new branch and a <strong className="text-[#FFA500]">1500 square meters warehouse</strong>, ensuring we maintain the most comprehensive inventory of autoglass in Lebanon.
               </p>
             </div>
           </div>
 
           {/* Visual */}
-          <div className="relative h-[400px] rounded-lg overflow-hidden bg-gradient-to-br from-[#2596be] to-[#1e7a9a] shadow-xl">
+          <div className="relative h-[400px] rounded-lg overflow-hidden bg-gradient-to-br from-[#FFA500] to-[#FF8C00] shadow-xl">
             <div className="absolute inset-0 flex items-center justify-center">
               <div className="text-center text-white space-y-6 p-8">
                 <div className="w-32 h-32 bg-white/20 backdrop-blur-sm rounded-full flex items-center justify-center shadow-lg mx-auto">
@@ -74,7 +74,7 @@ export default function About() {
         <div className="bg-gray-900 rounded-lg p-12 md:p-16 text-white shadow-xl">
           <div className="max-w-4xl mx-auto">
             <div className="text-center mb-8">
-              <div className="inline-block px-4 py-2 bg-[#2596be] rounded-md mb-6 text-sm font-semibold">
+              <div className="inline-block px-4 py-2 bg-[#FFA500] rounded-md mb-6 text-sm font-semibold">
                 OUR COMMITMENT
               </div>
               <h2 className="text-4xl md:text-5xl font-bold mb-6">
@@ -116,7 +116,7 @@ export default function About() {
             {
               title: 'The Oldest',
               description: 'Founded in 1964, we have over 60 years of experience serving Lebanon. Our longevity speaks to our reliability and trustworthiness.',
-              gradient: 'from-[#2596be] to-[#1e7a9a]',
+              gradient: 'from-[#FFA500] to-[#FF8C00]',
             },
             {
               title: 'The Best',
@@ -126,7 +126,7 @@ export default function About() {
             {
               title: 'The Reference',
               description: 'As Lebanon\'s most renowned autoglass company, we are the trusted reference for all autoglass needs across the country.',
-              gradient: 'from-[#2596be] to-[#1e7a9a]',
+              gradient: 'from-[#FFA500] to-[#FF8C00]',
             },
           ].map((item, index) => (
             <div
@@ -144,7 +144,7 @@ export default function About() {
       <section className="max-w-7xl mx-auto mb-20">
         <div className="bg-white rounded-lg p-12 md:p-16 border border-gray-200 shadow-sm">
           <div className="text-center mb-12">
-            <div className="inline-block px-4 py-2 bg-[#2596be] text-white rounded-md mb-6 text-sm font-semibold">
+            <div className="inline-block px-4 py-2 bg-[#FFA500] text-white rounded-md mb-6 text-sm font-semibold">
               OUR EXPERTISE
             </div>
             <h2 className="text-4xl md:text-5xl font-bold mb-6 text-gray-900">
@@ -163,7 +163,7 @@ export default function About() {
               </p>
             </div>
           </div>
-          <div className="mt-8 p-8 bg-[#2596be] rounded-lg text-white">
+          <div className="mt-8 p-8 bg-[#FFA500] rounded-lg text-white">
             <p className="text-lg leading-relaxed text-center">
               Ets. Georges Makoukji for autoglass offers a wide variety of window and windshield rubber for all vehicles, in addition to mirrors and plexiglas.
             </p>
@@ -182,7 +182,7 @@ export default function About() {
           </p>
           <Link
             href="/contact"
-            className="inline-block px-10 py-3 bg-[#2596be] text-white rounded-md font-semibold text-lg hover:bg-[#1e7a9a] transition-colors duration-200 shadow-md"
+            className="inline-block px-10 py-3 bg-[#FFA500] text-white rounded-md font-semibold text-lg hover:bg-[#FF8C00] transition-colors duration-200 shadow-md"
           >
             Contact Us Today
           </Link>

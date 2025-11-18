@@ -9,7 +9,7 @@ export default function Collection() {
         {/* Hero Section */}
         <section className="py-16 mb-16 border-b border-gray-200">
           <div className="text-center">
-            <div className="inline-block mb-6 px-4 py-2 bg-[#2596be] text-white rounded-md text-sm font-semibold">
+            <div className="inline-block mb-6 px-4 py-2 bg-[#FFA500] text-white rounded-md text-sm font-semibold">
               SPECIAL COLLECTION
             </div>
             <h1 className="text-5xl md:text-6xl font-bold mb-6 text-gray-900">
@@ -27,7 +27,7 @@ export default function Collection() {
             <div className="text-center space-y-8">
               {/* Icon */}
               <div className="flex justify-center mb-8">
-                <div className="w-32 h-32 bg-[#2596be] rounded-full flex items-center justify-center shadow-lg">
+                <div className="w-32 h-32 bg-[#FFA500] rounded-full flex items-center justify-center shadow-lg">
                   <svg className="w-16 h-16 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 6V4m0 2a2 2 0 100 4m0-4a2 2 0 110 4m-6 8a2 2 0 100-4m0 4a2 2 0 110-4m0 4v2m0-6V4m6 6v10m6-2a2 2 0 100-4m0 4a2 2 0 110-4m0 4v2m0-6V4" />
                   </svg>
@@ -41,7 +41,7 @@ export default function Collection() {
               
               <div className="bg-gray-50 rounded-lg p-8 md:p-12 border border-gray-200">
                 <p className="text-xl md:text-2xl text-gray-700 mb-4 leading-relaxed">
-                  We are currently <strong className="text-[#2596be]">developing</strong> this exclusive section to showcase our collection of special and very rare glasses for collection cars.
+                  We are currently <strong className="text-[#FFA500]">developing</strong> this exclusive section to showcase our collection of special and very rare glasses for collection cars.
                 </p>
                 <p className="text-lg text-gray-600">
                   Stay tuned for an amazing collection of hard-to-find autoglass pieces!
@@ -59,7 +59,7 @@ export default function Collection() {
                     key={index}
                     className="bg-gray-50 rounded-lg p-8 border border-gray-200"
                   >
-                    <h3 className="text-xl font-bold text-[#2596be] mb-2">{item.title}</h3>
+                    <h3 className="text-xl font-bold text-[#FFA500] mb-2">{item.title}</h3>
                     <p className="text-gray-600">{item.desc}</p>
                   </div>
                 ))}
@@ -69,13 +69,13 @@ export default function Collection() {
               <div className="flex flex-col sm:flex-row gap-4 justify-center pt-8">
                 <Link
                   href="/contact"
-                  className="px-8 py-3 bg-[#2596be] text-white rounded-md font-semibold text-lg hover:bg-[#1e7a9a] transition-colors duration-200 shadow-md"
+                  className="px-8 py-3 bg-[#FFA500] text-white rounded-md font-semibold text-lg hover:bg-[#FF8C00] transition-colors duration-200 shadow-md"
                 >
                   Contact Us for Inquiries
                 </Link>
                 <Link
                   href="/services"
-                  className="px-8 py-3 border-2 border-[#2596be] text-[#2596be] rounded-md font-semibold text-lg hover:bg-[#2596be] hover:text-white transition-colors duration-200"
+                  className="px-8 py-3 border-2 border-[#FFA500] text-[#FFA500] rounded-md font-semibold text-lg hover:bg-[#FFA500] hover:text-white transition-colors duration-200"
                 >
                   View Our Services
                 </Link>

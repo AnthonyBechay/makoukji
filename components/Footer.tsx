@@ -25,7 +25,7 @@ export default function Footer() {
                 href="https://facebook.com"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="w-10 h-10 bg-[#2596be] rounded-lg flex items-center justify-center hover:bg-[#1e7a9a] transition-colors"
+                className="w-10 h-10 bg-[#FFA500] rounded-lg flex items-center justify-center hover:bg-[#FF8C00] transition-colors"
                 aria-label="Facebook"
               >
                 <svg className="w-5 h-5 text-white" fill="currentColor" viewBox="0 0 24 24">
@@ -36,7 +36,7 @@ export default function Footer() {
                 href="https://instagram.com"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="w-10 h-10 bg-[#2596be] rounded-lg flex items-center justify-center hover:bg-[#1e7a9a] transition-colors"
+                className="w-10 h-10 bg-[#FFA500] rounded-lg flex items-center justify-center hover:bg-[#FF8C00] transition-colors"
                 aria-label="Instagram"
               >
                 <svg className="w-5 h-5 text-white" fill="currentColor" viewBox="0 0 24 24">
@@ -82,7 +82,7 @@ export default function Footer() {
             
             {/* Phone Numbers */}
             <div className="mb-6">
-              <h5 className="text-xs font-semibold text-[#2596be] uppercase tracking-wider mb-4">Phone Number</h5>
+              <h5 className="text-xs font-semibold text-[#FFA500] uppercase tracking-wider mb-4">Phone Number</h5>
               <ul className="space-y-2">
                 {['00961-1-256297', '00961-1-256298', '00961-1-247143', '00961-3-897157'].map((phone, index) => (
                   <li key={index}>
@@ -99,7 +99,7 @@ export default function Footer() {
 
             {/* Address */}
             <div className="mb-6">
-              <h5 className="text-xs font-semibold text-[#2596be] uppercase tracking-wider mb-4">Address</h5>
+              <h5 className="text-xs font-semibold text-[#FFA500] uppercase tracking-wider mb-4">Address</h5>
               <div className="text-gray-300 font-medium leading-relaxed">
                 <p>Dora Trade Center</p>
                 <p>Dora Highway</p>
@@ -109,7 +109,7 @@ export default function Footer() {
 
             {/* Email */}
             <div>
-              <h5 className="text-xs font-semibold text-[#2596be] uppercase tracking-wider mb-4">Email Us</h5>
+              <h5 className="text-xs font-semibold text-[#FFA500] uppercase tracking-wider mb-4">Email Us</h5>
               <ul className="space-y-2">
                 {['info@makoukji.com', 'georges@makoukji.com'].map((email, index) => (
                   <li key={index}>

@@ -10,7 +10,7 @@ export default function Home() {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             {/* Left Content */}
             <div className="text-gray-900 space-y-8">
-              <div className="inline-block px-4 py-2 bg-[#2596be] text-white rounded-md text-sm font-semibold">
+              <div className="inline-block px-4 py-2 bg-[#FFA500] text-white rounded-md text-sm font-semibold">
                 ESTABLISHED 1964 • LEBANON'S MOST RENOWNED AUTO GLASS COMPANY
               </div>
               
@@ -27,23 +27,23 @@ export default function Home() {
 
               <h1 className="text-5xl md:text-6xl font-bold leading-tight text-gray-900">
                 Lebanon's Trusted Auto Glass Experts
-                <span className="block text-[#2596be] mt-2">Since 1964</span>
+                <span className="block text-[#FFA500] mt-2">Since 1964</span>
               </h1>
               
               <p className="text-xl text-gray-600 leading-relaxed">
-                With over <strong className="text-[#2596be]">60 years of experience</strong>, we are Lebanon's most renowned autoglass company. We maintain the most comprehensive inventory of car glass in the region, ensuring we have what you need when you need it.
+                With over <strong className="text-[#FFA500]">60 years of experience</strong>, we are Lebanon's most renowned autoglass company. We maintain the most comprehensive inventory of car glass in the region, ensuring we have what you need when you need it.
               </p>
 
               <div className="flex flex-col sm:flex-row gap-4 pt-4">
                 <Link
                   href="/contact"
-                  className="px-8 py-3 bg-[#2596be] text-white rounded-md font-semibold text-lg hover:bg-[#1e7a9a] transition-colors duration-200 shadow-md"
+                  className="px-8 py-3 bg-[#FFA500] text-white rounded-md font-semibold text-lg hover:bg-[#FF8C00] transition-colors duration-200 shadow-md"
                 >
                   Get Free Quote
                 </Link>
                 <Link
                   href="/services"
-                  className="px-8 py-3 border-2 border-[#2596be] text-[#2596be] rounded-md font-semibold text-lg hover:bg-[#2596be] hover:text-white transition-colors duration-200"
+                  className="px-8 py-3 border-2 border-[#FFA500] text-[#FFA500] rounded-md font-semibold text-lg hover:bg-[#FFA500] hover:text-white transition-colors duration-200"
                 >
                   View Our Services
                 </Link>
@@ -52,7 +52,7 @@ export default function Home() {
 
             {/* Right Visual */}
             <div className="relative h-[500px] lg:h-[600px] rounded-lg overflow-hidden shadow-xl">
-              <div className="absolute inset-0 bg-gradient-to-br from-[#2596be] via-[#1e7a9a] to-[#2596be]">
+              <div className="absolute inset-0 bg-gradient-to-br from-[#FFA500] via-[#FF8C00] to-[#FFD700]">
                 {/* Animated background pattern */}
                 <div className="absolute inset-0 opacity-10">
                   <div className="absolute inset-0" style={{
@@ -81,7 +81,7 @@ export default function Home() {
                     {/* Floating stats */}
                     <div className="absolute top-0 right-0 bg-white/95 backdrop-blur-sm rounded-2xl p-6 shadow-2xl transform -translate-y-4">
                       <div className="text-center">
-                        <div className="text-4xl font-bold text-[#2596be] mb-1">60+</div>
+                        <div className="text-4xl font-bold text-[#FFA500] mb-1">60+</div>
                         <div className="text-sm font-semibold text-gray-700">Years</div>
                       </div>
                     </div>
@@ -89,7 +89,7 @@ export default function Home() {
                     {/* Quality indicator */}
                     <div className="absolute bottom-0 left-0 bg-white/95 backdrop-blur-sm rounded-2xl p-4 shadow-2xl transform translate-y-4">
                       <div className="flex items-center gap-3">
-                        <div className="w-12 h-12 bg-[#2596be] rounded-full flex items-center justify-center">
+                        <div className="w-12 h-12 bg-[#FFA500] rounded-full flex items-center justify-center">
                           <svg className="w-7 h-7 text-white" fill="currentColor" viewBox="0 0 20 20">
                             <path fillRule="evenodd" d="M6.267 3.455a3.066 3.066 0 001.745-.723 3.066 3.066 0 013.976 0 3.066 3.066 0 001.745.723 3.066 3.066 0 012.812 2.812c.051.643.304 1.254.723 1.745a3.066 3.066 0 010 3.976 3.066 3.066 0 00-.723 1.745 3.066 3.066 0 01-2.812 2.812 3.066 3.066 0 00-1.745.723 3.066 3.066 0 01-3.976 0 3.066 3.066 0 00-1.745-.723 3.066 3.066 0 01-2.812-2.812 3.066 3.066 0 00-.723-1.745 3.066 3.066 0 010-3.976 3.066 3.066 0 00.723-1.745 3.066 3.066 0 012.812-2.812zm7.44 5.252a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
                           </svg>
@@ -127,7 +127,7 @@ export default function Home() {
                 key={index}
                 className="text-center"
               >
-                <div className="text-4xl md:text-5xl font-bold text-[#2596be] mb-2">{stat.number}</div>
+                <div className="text-4xl md:text-5xl font-bold text-[#FFA500] mb-2">{stat.number}</div>
                 <div className="text-gray-600 font-medium">{stat.label}</div>
               </div>
             ))}
@@ -181,7 +181,7 @@ export default function Home() {
                 key={index}
                 className="bg-white p-8 rounded-lg border border-gray-200 shadow-sm hover:shadow-md transition-shadow duration-200"
               >
-                <div className="w-16 h-16 bg-[#2596be] rounded-lg flex items-center justify-center mb-6 text-white">
+                <div className="w-16 h-16 bg-[#FFA500] rounded-lg flex items-center justify-center mb-6 text-white">
                   {feature.icon}
                 </div>
                 <h3 className="text-2xl font-bold mb-4 text-gray-900">{feature.title}</h3>
@@ -208,20 +208,20 @@ export default function Home() {
             {['ROOF GLASS', 'WINDSHIELD', 'SIDE WINDOW', 'RUBBER', 'SUPER CARS', 'TRUCK', 'HEAVY MACHINERY', 'BUS'].map((service, index) => (
               <div
                 key={index}
-                className="bg-gray-50 p-6 rounded-lg border border-gray-200 text-center hover:border-[#2596be] hover:shadow-md transition-all duration-200"
+                className="bg-gray-50 p-6 rounded-lg border border-gray-200 text-center hover:border-[#FFA500] hover:shadow-md transition-all duration-200"
               >
                 <h3 className="text-sm font-semibold text-gray-900">{service}</h3>
               </div>
             ))}
           </div>
 
-          <div className="bg-[#2596be] rounded-lg p-8 text-center text-white">
+          <div className="bg-[#FFA500] rounded-lg p-8 text-center text-white">
             <p className="text-lg mb-6">
               Plus specialized services for boats, yachts, and all types of vehicles
             </p>
             <Link
               href="/services"
-              className="inline-block px-8 py-3 bg-white text-[#2596be] rounded-md font-semibold hover:bg-gray-100 transition-colors duration-200"
+              className="inline-block px-8 py-3 bg-white text-[#FFA500] rounded-md font-semibold hover:bg-gray-100 transition-colors duration-200"
             >
               View All Services
             </Link>
@@ -241,7 +241,7 @@ export default function Home() {
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Link
               href="/contact"
-              className="px-10 py-3 bg-[#2596be] text-white rounded-md font-semibold text-lg hover:bg-[#1e7a9a] transition-colors duration-200 shadow-md"
+              className="px-10 py-3 bg-[#FFA500] text-white rounded-md font-semibold text-lg hover:bg-[#FF8C00] transition-colors duration-200 shadow-md"
             >
               Contact Us Today
             </Link>

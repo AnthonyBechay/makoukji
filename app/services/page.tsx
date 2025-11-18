@@ -96,7 +96,7 @@ export default function Services() {
       {/* Hero Section */}
       <section className="py-16 mb-16 border-b border-gray-200">
         <div className="max-w-7xl mx-auto text-center">
-          <div className="inline-block mb-6 px-4 py-2 bg-[#2596be] text-white rounded-md text-sm font-semibold">
+          <div className="inline-block mb-6 px-4 py-2 bg-[#FFA500] text-white rounded-md text-sm font-semibold">
             OUR SERVICES
           </div>
           <h1 className="text-5xl md:text-6xl font-bold mb-6 text-gray-900">
@@ -114,7 +114,7 @@ export default function Services() {
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
             <div className="p-8 bg-white rounded-lg border border-gray-200">
               <p className="text-lg text-gray-700 leading-relaxed">
-                <strong className="text-[#2596be]">Ets. Georges Makoukji for autoglass</strong> is specialized in the area of autoglass (windshields, backlights, side windows and quarters) for all vehicle brands from the smallest car to the biggest truck or bus, in addition to yachts.
+                <strong className="text-[#FFA500]">Ets. Georges Makoukji for autoglass</strong> is specialized in the area of autoglass (windshields, backlights, side windows and quarters) for all vehicle brands from the smallest car to the biggest truck or bus, in addition to yachts.
               </p>
             </div>
             <div className="p-8 bg-white rounded-lg border border-gray-200">
@@ -123,7 +123,7 @@ export default function Services() {
               </p>
             </div>
           </div>
-          <div className="mt-8 p-8 bg-[#2596be] rounded-lg text-white">
+          <div className="mt-8 p-8 bg-[#FFA500] rounded-lg text-white">
             <p className="text-lg leading-relaxed text-center">
               <strong>Ets. Georges Makoukji for autoglass</strong> offers a wide variety of window and windshield rubber for all vehicles, in addition to mirrors and plexiglas.
             </p>
@@ -137,9 +137,9 @@ export default function Services() {
           {services.map((service, index) => (
             <div
               key={index}
-              className="bg-white rounded-lg p-8 border border-gray-200 shadow-sm hover:shadow-md hover:border-[#2596be] transition-all duration-200"
+              className="bg-white rounded-lg p-8 border border-gray-200 shadow-sm hover:shadow-md hover:border-[#FFA500] transition-all duration-200"
             >
-              <div className="w-16 h-16 bg-[#2596be] rounded-lg flex items-center justify-center mb-6 text-white">
+              <div className="w-16 h-16 bg-[#FFA500] rounded-lg flex items-center justify-center mb-6 text-white">
                 {service.icon}
               </div>
               <h3 className="text-2xl font-bold mb-4 text-gray-900">
@@ -157,7 +157,7 @@ export default function Services() {
       <section className="max-w-7xl mx-auto mb-20">
         <div className="bg-gray-900 rounded-lg p-12 md:p-16 text-white shadow-xl">
           <div className="text-center mb-12">
-            <div className="inline-block px-4 py-2 bg-[#2596be] rounded-md mb-6 text-sm font-semibold">
+            <div className="inline-block px-4 py-2 bg-[#FFA500] rounded-md mb-6 text-sm font-semibold">
               OUR COVERAGE
             </div>
             <h2 className="text-4xl md:text-5xl font-bold mb-6">
@@ -188,7 +188,7 @@ export default function Services() {
 
       {/* CTA Section */}
       <section className="max-w-4xl mx-auto text-center">
-        <div className="bg-[#2596be] rounded-lg p-12 md:p-16 text-white shadow-xl">
+        <div className="bg-[#FFA500] rounded-lg p-12 md:p-16 text-white shadow-xl">
           <h2 className="text-4xl md:text-5xl font-bold mb-6">
             Ready to Get Started?
           </h2>
@@ -197,7 +197,7 @@ export default function Services() {
           </p>
           <Link
             href="/contact"
-            className="inline-block px-10 py-3 bg-white text-[#2596be] rounded-md font-semibold text-lg hover:bg-gray-100 transition-colors duration-200 shadow-md"
+            className="inline-block px-10 py-3 bg-white text-[#FFA500] rounded-md font-semibold text-lg hover:bg-gray-100 transition-colors duration-200 shadow-md"
           >
             Contact Us
           </Link>
