@@ -16,7 +16,7 @@ export default function Home() {
               
               <div className="mb-6">
                 <Image 
-                  src="/makoukji-logo.png" 
+                  src="/logo-nobackground.png" 
                   alt="Makoukji Auto Glass Logo" 
                   width={280} 
                   height={84}
