@@ -63,7 +63,7 @@ export default function Navbar() {
           <div className="hidden md:block ml-6">
             <Link
               href="/contact"
-              className="px-6 py-2.5 bg-white text-[#fae633] rounded-md font-semibold text-sm hover:bg-gray-100 transition-colors duration-200 shadow-sm"
+              className="px-6 py-2.5 bg-black text-white rounded-md font-semibold text-sm hover:bg-gray-900 transition-colors duration-200 shadow-sm"
             >
               Get Quote
             </Link>
@@ -134,7 +134,7 @@ export default function Navbar() {
             <div className="pt-4">
               <Link
                 href="/contact"
-                className="block w-full text-center px-6 py-3 bg-white text-[#fae633] rounded-md font-semibold hover:bg-gray-100 transition-colors"
+                className="block w-full text-center px-6 py-3 bg-black text-white rounded-md font-semibold hover:bg-gray-900 transition-colors"
                 onClick={() => setIsOpen(false)}
               >
                 Get Free Quote
