@@ -68,8 +68,14 @@ export default function Navbar() {
             </Link>
           </div>
 
-          {/* Mobile menu button */}
-          <div className="md:hidden">
+          {/* Mobile actions: Call + Menu */}
+          <div className="md:hidden flex items-center gap-3">
+            <a
+              href="tel:+9613897157"
+              className="px-3 py-1.5 rounded-full bg-black text-white text-sm font-semibold shadow-md hover:bg-gray-900"
+            >
+              Call
+            </a>
             <button
               onClick={() => setIsOpen(!isOpen)}
               className="inline-flex items-center justify-center p-2 rounded-md text-white hover:text-gray-100 hover:bg-[#d4c82a] transition-colors"

@@ -69,114 +69,44 @@ export default function Contact() {
 
       <div className="max-w-7xl mx-auto">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
-          {/* Contact Form */}
+          {/* WhatsApp-first contact card */}
           <div className="bg-white rounded-lg p-10 md:p-12 shadow-lg border border-gray-200">
             <div className="mb-8">
               <h2 className="text-3xl font-bold mb-4 text-gray-900">
-                Send us a Message
+                WhatsApp Us for a Fast Quote
               </h2>
-              <p className="text-gray-600">Fill out the form below and we'll get back to you as soon as possible.</p>
+              <p className="text-gray-600 text-lg">
+                The fastest way to reach us is on WhatsApp. Send us your car details and we&apos;ll reply with a quote as soon as possible.
+              </p>
             </div>
-            <form onSubmit={handleSubmit} className="space-y-6">
-              <div>
-                <label htmlFor="name" className="block text-sm font-semibold text-gray-900 mb-2">
-                  Name *
-                </label>
-                <input
-                  type="text"
-                  id="name"
-                  name="name"
-                  value={formData.name}
-                  onChange={handleChange}
-                  required
-                  className="w-full px-4 py-3 border border-gray-300 rounded-md focus:ring-2 focus:ring-[#fae633] focus:border-[#fae633] bg-white text-gray-900 transition-colors"
-                  placeholder="Your full name"
-                />
-              </div>
-              
-              <div>
-                <label htmlFor="email" className="block text-sm font-semibold text-gray-900 mb-2">
-                  Email *
-                </label>
-                <input
-                  type="email"
-                  id="email"
-                  name="email"
-                  value={formData.email}
-                  onChange={handleChange}
-                  required
-                  className="w-full px-4 py-3 border border-gray-300 rounded-md focus:ring-2 focus:ring-[#fae633] focus:border-[#fae633] bg-white text-gray-900 transition-colors"
-                  placeholder="your.email@example.com"
-                />
-              </div>
-              
-              <div>
-                <label htmlFor="phone" className="block text-sm font-semibold text-gray-900 mb-2">
-                  Phone
-                </label>
-                <input
-                  type="tel"
-                  id="phone"
-                  name="phone"
-                  value={formData.phone}
-                  onChange={handleChange}
-                  className="w-full px-4 py-3 border border-gray-300 rounded-md focus:ring-2 focus:ring-[#fae633] focus:border-[#fae633] bg-white text-gray-900 transition-colors"
-                  placeholder="00961-1-256297"
-                />
-              </div>
-              
-              <div>
-                <label htmlFor="subject" className="block text-sm font-semibold text-gray-900 mb-2">
-                  Subject *
-                </label>
-                <input
-                  type="text"
-                  id="subject"
-                  name="subject"
-                  value={formData.subject}
-                  onChange={handleChange}
-                  required
-                  className="w-full px-4 py-3 border border-gray-300 rounded-md focus:ring-2 focus:ring-[#fae633] focus:border-[#fae633] bg-white text-gray-900 transition-colors"
-                  placeholder="What's this about?"
-                />
-              </div>
-              
-              <div>
-                <label htmlFor="message" className="block text-sm font-semibold text-gray-900 mb-2">
-                  Message *
-                </label>
-                <textarea
-                  id="message"
-                  name="message"
-                  value={formData.message}
-                  onChange={handleChange}
-                  required
-                  rows={6}
-                  className="w-full px-4 py-3 border border-gray-300 rounded-md focus:ring-2 focus:ring-[#fae633] focus:border-[#fae633] bg-white text-gray-900 transition-colors resize-none"
-                  placeholder="Your message..."
-                />
-              </div>
-              
-              {submitStatus.type && (
-                <div
-                  className={`p-4 rounded-md ${
-                    submitStatus.type === 'success'
-                      ? 'bg-green-50 text-green-800 border border-green-200'
-                      : 'bg-red-50 text-red-800 border border-red-200'
-                  }`}
-                >
-                  <p className="font-medium">{submitStatus.message}</p>
-                </div>
-              )}
-              
-              <button
-                type="submit"
-                disabled={isSubmitting}
-                className="w-full px-8 py-3 bg-[#fae633] text-white rounded-md font-semibold text-lg hover:bg-[#d4c82a] transition-colors duration-200 shadow-md disabled:opacity-50 disabled:cursor-not-allowed"
+            <div className="space-y-4">
+              <a
+                href="https://wa.me/9613897157?text=Hello%2C%20I%20would%20like%20a%20quote%20for%20my%20car%20glass."
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex items-center justify-center gap-3 w-full px-8 py-4 bg-[#25D366] text-white rounded-md font-semibold text-lg hover:bg-[#1ebe5a] transition-colors duration-200 shadow-md"
               >
-                {isSubmitting ? 'Sending...' : 'Send Message'}
-              </button>
-            </form>
+                <svg
+                  className="h-6 w-6"
+                  viewBox="0 0 32 32"
+                  fill="currentColor"
+                  aria-hidden="true"
+                >
+                  <path d="M16 3C9.373 3 4 8.373 4 15c0 2.147.57 4.098 1.61 5.85L4 29l8.39-2.21A11.9 11.9 0 0 0 16 27c6.627 0 12-5.373 12-12S22.627 3 16 3zm0 2c5.065 0 9 3.935 9 9 0 1.77-.5 3.496-1.45 4.99l-.23.36.68 4.01-4.11-1.08-.35.21A8.93 8.93 0 0 1 16 23c-4.963 0-9-4.037-9-9 0-4.963 4.037-9 9-9zm4.09 13.04c-.22-.11-1.3-.64-1.5-.71-.2-.07-.35-.11-.5.11-.15.22-.57.71-.7.86-.13.15-.26.17-.48.06-.24-.12-.99-.37-1.88-1.14-.7-.6-1.44-1.72-1.61-2.01-.17-.29-.02-.36.1-.47.1-.1.22-.26.33-.39.11-.13.15-.22.23-.37.08-.15.04-.28-.02-.39-.06-.11-.5-1.21-.69-1.66-.18-.45-.37-.39-.5-.4h-.43c-.14 0-.36.05-.55.25-.19.2-.72.71-.72 1.73s.74 2.01.84 2.15c.1.13 1.45 2.22 3.5 3.02.49.21.87.33 1.17.42.49.16.94.14 1.29.08.39-.06 1.3-.53 1.49-1.04.18-.5.18-.93.13-1.02-.06-.09-.2-.14-.42-.24z" />
+                </svg>
+                <span>WhatsApp Us Now</span>
+              </a>
+              <p className="text-gray-500 text-sm">
+                Prefer to call? You can also reach us directly at{' '}
+                <a
+                  href="tel:+9613897157"
+                  className="font-semibold text-gray-900 underline"
+                >
+                  +961 3 897157
+                </a>
+                .
+              </p>
+            </div>
           </div>
 
           {/* Contact Information */}
@@ -312,6 +242,37 @@ export default function Contact() {
           </div>
         </div>
       </div>
+
+      {/* Find Us - Map */}
+      <section className="mt-16 px-4 sm:px-6 lg:px-8">
+        <div className="max-w-7xl mx-auto">
+          <div className="bg-gray-50 rounded-lg p-8 md:p-12 border border-gray-200 shadow-sm">
+            <h2 className="text-3xl font-bold mb-4 text-gray-900">Find Us</h2>
+            <p className="text-gray-600 mb-6">
+              We are located on Dora Highway at Dora Trade Center. Use the map below to find us or get directions.
+            </p>
+            <div className="aspect-[16/9] w-full rounded-lg overflow-hidden border border-gray-200">
+              <iframe
+                src="https://www.google.com/maps?q=33.89542024416916,35.546435767802386&hl=en&z=17&output=embed"
+                className="w-full h-full border-0"
+                loading="lazy"
+                referrerPolicy="no-referrer-when-downgrade"
+                allowFullScreen
+              />
+            </div>
+            <div className="mt-6">
+              <a
+                href="https://www.google.com/maps/dir/?api=1&destination=33.89542024416916,35.546435767802386"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-block px-6 py-3 bg-[#fae633] text-gray-900 font-semibold rounded-md hover:bg-[#d4c82a] transition-colors"
+              >
+                Get Directions
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
     </div>
   );
 }
