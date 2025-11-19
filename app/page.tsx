@@ -5,34 +5,34 @@ export default function Home() {
   return (
     <div className="min-h-screen bg-white">
       {/* Hero Section - Professional */}
-      <section className="relative pt-36 pb-24 px-4 sm:px-6 lg:px-8 bg-gradient-to-b from-gray-50 to-white">
+      <section className="relative pt-40 pb-28 px-4 sm:px-6 lg:px-8 bg-gradient-to-b from-gray-50 to-white">
         <div className="max-w-7xl mx-auto">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             {/* Left Content */}
-            <div className="text-gray-900 space-y-10">
-              <div className="inline-block px-5 py-2.5 bg-[#fae633] text-white rounded-md text-base font-semibold tracking-wide">
+            <div className="text-gray-900 space-y-12">
+              <div className="inline-block px-6 py-3 bg-[#fae633] text-white rounded-md text-lg font-semibold tracking-wide shadow-md">
                 ESTABLISHED 1964 • LEBANON'S MOST RENOWNED AUTO GLASS COMPANY
               </div>
               
-              <h1 className="text-5xl md:text-6xl lg:text-7xl font-extrabold leading-tight text-gray-900">
+              <h1 className="text-5xl md:text-6xl lg:text-[4.75rem] xl:text-[5.25rem] font-extrabold leading-tight text-gray-900">
                 Lebanon's Trusted Auto Glass Experts
-                <span className="block text-[#fae633] mt-3 text-2xl md:text-3xl">Since 1964</span>
+                <span className="block text-[#fae633] mt-4 text-2xl md:text-3xl lg:text-4xl">Since 1964</span>
               </h1>
               
-              <p className="text-xl md:text-2xl text-gray-600 leading-relaxed">
+              <p className="text-xl md:text-2xl lg:text-[1.45rem] text-gray-600 leading-relaxed max-w-2xl">
                 With over <strong className="text-[#fae633]">60 years of experience</strong>, we are Lebanon's most renowned autoglass company. We maintain the most comprehensive inventory of car glass in the region, ensuring we have what you need when you need it.
               </p>
 
               <div className="flex flex-col sm:flex-row gap-4 pt-4">
                 <Link
                   href="/contact"
-                  className="px-8 py-3 bg-[#fae633] text-white rounded-md font-semibold text-lg hover:bg-[#d4c82a] transition-colors duration-200 shadow-md"
+                  className="px-9 py-3.5 bg-[#fae633] text-white rounded-md font-semibold text-xl hover:bg-[#d4c82a] transition-colors duration-200 shadow-lg"
                 >
                   Get Free Quote
                 </Link>
                 <Link
                   href="/services"
-                  className="px-8 py-3 border-2 border-[#fae633] text-[#fae633] rounded-md font-semibold text-lg hover:bg-[#fae633] hover:text-white transition-colors duration-200"
+                  className="px-9 py-3.5 border-2 border-[#fae633] text-[#fae633] rounded-md font-semibold text-xl hover:bg-[#fae633] hover:text-white transition-colors duration-200"
                 >
                   View Our Services
                 </Link>
