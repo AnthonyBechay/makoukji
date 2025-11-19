@@ -64,6 +64,14 @@ export default function Contact() {
           <p className="text-xl md:text-2xl text-gray-600 max-w-3xl mx-auto">
             We'd love to hear from you. Send us a message or call us for a free quote on your autoglass repair needs.
           </p>
+          <div className="mt-8 flex justify-center">
+            <a
+              href="#find-us"
+              className="px-6 py-3 bg-black text-white rounded-md font-semibold text-sm md:text-base hover:bg-gray-900 transition-colors"
+            >
+              View Location
+            </a>
+          </div>
         </div>
       </section>
 
