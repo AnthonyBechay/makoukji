@@ -343,7 +343,7 @@ export default function Contact() {
             </p>
             <div className="aspect-[16/9] w-full rounded-lg overflow-hidden border border-gray-200">
               <iframe
-                src="https://www.google.com/maps?q=33.89542024416916,35.546435767802386&hl=en&z=17&output=embed"
+                src="https://www.google.com/maps?q=Georges%20Makoukji%20for%20Auto%20Glass%20Dora%20Trade%20Center%20Lebanon&output=embed"
                 className="w-full h-full border-0"
                 loading="lazy"
                 referrerPolicy="no-referrer-when-downgrade"
@@ -352,7 +352,7 @@ export default function Contact() {
             </div>
             <div className="mt-6">
               <a
-                href="https://www.google.com/maps/dir/?api=1&destination=33.89542024416916,35.546435767802386"
+                href="https://www.google.com/maps/dir/?api=1&destination=Georges+Makoukji+for+Auto+Glass+Dora+Trade+Center+Lebanon"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-block px-6 py-3 bg-[#fae633] text-gray-900 font-semibold rounded-md hover:bg-[#d4c82a] transition-colors"
