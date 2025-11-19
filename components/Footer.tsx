@@ -21,8 +21,8 @@ export default function Footer() {
               Ets. Georges Makoukji for autoglass - Founded in <strong className="text-white">1964</strong>. Lebanon's most renowned autoglass company with over 60 years of excellence.
             </p>
             <div className="flex space-x-4">
-              <a
-                href="https://facebook.com"
+              <a 
+                href="https://www.facebook.com/makoukjiautoglass/" 
                 target="_blank"
                 rel="noopener noreferrer"
                 className="w-10 h-10 bg-[#fae633] rounded-lg flex items-center justify-center hover:bg-[#d4c82a] transition-colors"
@@ -33,7 +33,7 @@ export default function Footer() {
                 </svg>
               </a>
               <a
-                href="https://instagram.com"
+                href="https://www.instagram.com/makoukjiautoglass/" 
                 target="_blank"
                 rel="noopener noreferrer"
                 className="w-10 h-10 bg-[#fae633] rounded-lg flex items-center justify-center hover:bg-[#d4c82a] transition-colors"
