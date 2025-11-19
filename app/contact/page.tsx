@@ -53,15 +53,15 @@ export default function Contact() {
   return (
     <div className="min-h-screen pt-24 pb-20 px-4 sm:px-6 lg:px-8 bg-white">
       {/* Hero Section */}
-      <section className="py-16 mb-16 border-b border-gray-200">
+      <section className="py-20 mb-16 border-b border-gray-200">
         <div className="max-w-7xl mx-auto text-center">
-          <div className="inline-block mb-6 px-4 py-2 bg-[#fae633] text-white rounded-md text-sm font-semibold">
+          <div className="inline-block mb-6 px-5 py-2.5 bg-[#fae633] text-white rounded-md text-base font-semibold">
             CONTACT US
           </div>
-          <h1 className="text-5xl md:text-6xl font-bold mb-6 text-gray-900">
+          <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold mb-6 text-gray-900">
             Get In Touch
           </h1>
-          <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+          <p className="text-xl md:text-2xl text-gray-600 max-w-3xl mx-auto">
             We'd love to hear from you. Send us a message or call us for a free quote on your autoglass repair needs.
           </p>
         </div>
