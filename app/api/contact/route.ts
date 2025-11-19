@@ -1,4 +1,11 @@
 import { NextRequest, NextResponse } from 'next/server';
+import { Resend } from 'resend';
+
+const resend = process.env.RESEND_API_KEY
+  ? new Resend(process.env.RESEND_API_KEY)
+  : null;
+
+const CONTACT_EMAIL = process.env.CONTACT_EMAIL || 'info@makoukji.com';
 
 export async function POST(request: NextRequest) {
   try {
@@ -20,8 +27,7 @@ export async function POST(request: NextRequest) {
     // 3. Nodemailer with SMTP
     // 4. Formspree or other form services
 
-    // For now, we'll log the submission and return success
-    // You can add email sending logic here
+    // For now, we'll log the submission and also send an email
     console.log('Contact form submission:', {
       name,
       email,
@@ -30,6 +36,31 @@ export async function POST(request: NextRequest) {
       message,
       timestamp: new Date().toISOString(),
     });
+
+    // Send email via Resend if configured
+    if (!resend) {
+      console.error('RESEND_API_KEY is not configured. Email not sent.');
+    } else {
+      try {
+        await resend.emails.send({
+          from: 'website@makoukji.com',
+          to: [CONTACT_EMAIL],
+          replyTo: email,
+          subject: `Contact Form: ${subject}`,
+          html: `
+            <h2>New Contact Form Submission</h2>
+            <p><strong>Name:</strong> ${name}</p>
+            <p><strong>Email:</strong> ${email}</p>
+            <p><strong>Phone:</strong> ${phone || 'Not provided'}</p>
+            <p><strong>Subject:</strong> ${subject}</p>
+            <p><strong>Message:</strong></p>
+            <p>${message.replace(/\n/g, '<br />')}</p>
+          `,
+        });
+      } catch (emailError) {
+        console.error('Error sending contact email:', emailError);
+      }
+    }
 
     // TODO: Add email sending logic here
     // Example with Resend:
