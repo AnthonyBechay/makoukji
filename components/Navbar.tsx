@@ -23,15 +23,15 @@ export default function Navbar() {
         : 'bg-[#fae633] shadow-sm'
     }`}>
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex justify-between items-center h-20">
+        <div className="flex justify-between items-center h-24">
           <div className="flex-shrink-0">
             <Link href="/" className="flex items-center space-x-3 hover:opacity-90 transition-opacity">
               <Image 
                 src="/makoukji-logo.png" 
                 alt="Makoukji Auto Glass Logo" 
-                width={200} 
-                height={60}
-                className="h-12 w-auto"
+                width={260} 
+                height={78}
+                className="h-16 w-auto"
                 priority
               />
             </Link>
@@ -39,7 +39,7 @@ export default function Navbar() {
           
           {/* Desktop Navigation */}
           <div className="hidden md:block">
-            <div className="ml-10 flex items-baseline space-x-1">
+            <div className="ml-12 flex items-baseline space-x-3">
               {[
                 { href: '/', label: 'Home' },
                 { href: '/about', label: 'About' },
@@ -50,7 +50,7 @@ export default function Navbar() {
                 <Link
                   key={item.href}
                   href={item.href}
-                  className="relative px-5 py-2 text-sm font-semibold text-black hover:opacity-80 transition-opacity duration-200"
+                  className="relative px-5 py-2 text-base lg:text-lg font-semibold text-black hover:opacity-80 transition-opacity duration-200"
                 >
                   {item.label}
                 </Link>
@@ -109,9 +109,9 @@ export default function Navbar() {
               <Image 
                 src="/makoukji-logo.png" 
                 alt="Makoukji Auto Glass Logo" 
-                width={180} 
-                height={54}
-                className="h-10 w-auto"
+                width={220} 
+                height={66}
+                className="h-14 w-auto"
               />
             </div>
             {[
