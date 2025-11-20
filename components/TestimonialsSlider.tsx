@@ -49,8 +49,8 @@ export default function TestimonialsSlider() {
     <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
       {visibleReviews.map((review, index) => (
         <div
-          key={`${review.name}-${index}`}
-          className="glass-effect rounded-lg p-8 border border-white/40 shadow-lg bg-white/70"
+          key={`${currentIndex}-${review.name}-${index}`}
+          className="glass-effect rounded-lg p-8 border border-white/40 shadow-lg bg-white/70 testimonial-slide"
         >
           <div className="flex items-center gap-1 text-yellow-400 mb-4" aria-hidden="true">
             {Array.from({ length: 5 }).map((_, i) => (
