@@ -8,44 +8,69 @@ export const metadata = {
 export default function Services() {
   const services = [
     {
-      title: 'ROOF GLASS',
-      description: 'Professional roof glass installation and replacement for all vehicle types. Expert service ensuring perfect fit and seal.',
-      icon: (
-        <svg className="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6" />
-        </svg>
-      ),
-    },
-    {
       title: 'WINDSHIELD',
-      description: 'Expert windshield repair and replacement using premium OEM and aftermarket glass. Professional installation with quality guarantee.',
+      description:
+        'Front windshield replacement for all vehicle brands. We stock a wide range of high-quality glass and install it using factory-approved methods so your view and safety are restored.',
       icon: (
         <svg className="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
+          <path
+            strokeLinecap="round"
+            strokeLinejoin="round"
+            strokeWidth={2}
+            d="M3 6h18l-1 9a2 2 0 01-2 2H6a2 2 0 01-2-2L3 6z"
+          />
         </svg>
       ),
     },
     {
-      title: 'SIDE WINDOW',
-      description: 'Professional side window repair and replacement for all vehicle makes and models. Fast service to get you back on the road.',
+      title: 'BACKLIGHT',
+      description:
+        'Rear glass (backlight) replacement for hatchbacks, sedans, SUVs, and vans. We match the correct curvature and heating lines so your rear visibility and defrost function work perfectly.',
       icon: (
         <svg className="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 6h16M4 12h16M4 18h16" />
+          <path
+            strokeLinecap="round"
+            strokeLinejoin="round"
+            strokeWidth={2}
+            d="M4 7h16l-1 10H5L4 7z"
+          />
         </svg>
       ),
     },
     {
-      title: 'RUBBER',
-      description: 'Wide variety of window and windshield rubber for all vehicles. Quality seals and gaskets to ensure perfect fit and protection.',
+      title: 'DOOR & SIDE GLASS',
+      description:
+        'Door and side glass replacement when windows are smashed, scratched, or jammed. We fit the correct glass and ensure smooth window operation and proper sealing against dust and water.',
       icon: (
         <svg className="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+          <path
+            strokeLinecap="round"
+            strokeLinejoin="round"
+            strokeWidth={2}
+            d="M6 5h10l2 14H6V5z"
+          />
+        </svg>
+      ),
+    },
+    {
+      title: 'ROOF GLASS',
+      description:
+        'Replacement of fixed and sliding roof glass panels. We handle panoramic roofs and specialty roof glass, restoring both appearance and weather protection.',
+      icon: (
+        <svg className="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path
+            strokeLinecap="round"
+            strokeLinejoin="round"
+            strokeWidth={2}
+            d="M4 7h16M6 5h12a2 2 0 012 2v9H4V7a2 2 0 012-2z"
+          />
         </svg>
       ),
     },
     {
       title: 'SUPER CARS',
-      description: 'Specialized autoglass services for luxury and super cars. Premium quality glass and expert installation for high-end vehicles.',
+      description:
+        'Special autoglass sourcing and installation for luxury and super cars. We respect factory specifications and finishes so your high-end vehicle keeps its original look and performance.',
       icon: (
         <svg className="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 10V3L4 14h7v7l9-11h-7z" />
@@ -54,7 +79,8 @@ export default function Services() {
     },
     {
       title: 'TRUCK',
-      description: 'Heavy-duty autoglass solutions for trucks of all sizes. Durable glass and professional installation for commercial vehicles.',
+      description:
+        'Heavy-duty windshield and glass replacement for small and large trucks. Strong, durable glass and professional fitting to handle Lebanon’s roads and commercial use.',
       icon: (
         <svg className="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
@@ -63,7 +89,8 @@ export default function Services() {
     },
     {
       title: 'HEAVY MACHINERY',
-      description: 'Specialized glass solutions for heavy machinery, generators, and industrial equipment. Built to withstand tough conditions.',
+      description:
+        'Glass replacement for excavators, cranes, loaders, generators, and industrial equipment. We install thick, impact-resistant glass built for demanding job sites.',
       icon: (
         <svg className="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10.325 4.317c.426-1.756 2.924-1.756 3.35 0a1.724 1.724 0 002.573 1.066c1.543-.94 3.31.826 2.37 2.37a1.724 1.724 0 001.065 2.572c1.756.426 1.756 2.924 0 3.35a1.724 1.724 0 00-1.066 2.573c.94 1.543-.826 3.31-2.37 2.37a1.724 1.724 0 00-2.572 1.065c-.426 1.756-2.924 1.756-3.35 0a1.724 1.724 0 00-2.573-1.066c-1.543.94-3.31-.826-2.37-2.37a1.724 1.724 0 00-1.065-2.572c-1.756-.426-1.756-2.924 0-3.35a1.724 1.724 0 001.066-2.573c-.94-1.543.826-3.31 2.37-2.37.996.608 2.296.07 2.572-1.065z" />
@@ -73,7 +100,8 @@ export default function Services() {
     },
     {
       title: 'BUS',
-      description: 'Large-scale autoglass services for buses and commercial passenger vehicles. Expert handling of oversized glass installations.',
+      description:
+        'Windshield and side glass replacement for buses and coaches. Our team safely handles oversized glass and ensures clear visibility for passengers and drivers.',
       icon: (
         <svg className="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8 7h12m0 0l-4-4m4 4l-4 4m0 6H4m0 0l4 4m-4-4l4-4" />
@@ -81,8 +109,9 @@ export default function Services() {
       ),
     },
     {
-      title: 'BOAT & YACHT GLASSES',
-      description: 'Marine-grade glass solutions for boats and yachts. Specialized installation for marine environments with saltwater resistance.',
+      title: 'BOAT & YACHT GLASS',
+      description:
+        'Marine glass replacement for boats and yachts. We use marine-grade glass and installation techniques suited for saltwater and harsh coastal conditions.',
       icon: (
         <svg className="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3.055 11H5a2 2 0 012 2v1a2 2 0 002 2 2 2 0 012 2v2.945M8 3.935V5.5A2.5 2.5 0 0010.5 8h.5a2 2 0 012 2 2 2 0 104 0 2 2 0 012-2h1.064M15 20.488V18a2 2 0 012-2h3.064M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
