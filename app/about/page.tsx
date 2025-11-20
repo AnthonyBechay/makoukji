@@ -8,7 +8,7 @@ export const metadata = {
 
 export default function About() {
   return (
-    <div className="min-h-screen pt-24 pb-20 px-4 sm:px-6 lg:px-8 bg-white">
+    <article className="min-h-screen pt-24 pb-20 px-4 sm:px-6 lg:px-8 bg-white">
       {/* Hero Section */}
       <section className="py-16 mb-16 border-b border-gray-200">
         <div className="max-w-7xl mx-auto text-center">
@@ -188,6 +188,6 @@ export default function About() {
           </Link>
         </div>
       </section>
-    </div>
+    </article>
   );
 }

@@ -4,7 +4,7 @@ import Link from 'next/link';
 
 export default function Collection() {
   return (
-    <div className="min-h-screen pt-24 pb-20 px-4 sm:px-6 lg:px-8 bg-white">
+    <article className="min-h-screen pt-24 pb-20 px-4 sm:px-6 lg:px-8 bg-white">
       <div className="max-w-7xl mx-auto">
         {/* Hero Section */}
         <section className="py-16 mb-16 border-b border-gray-200">
@@ -94,6 +94,6 @@ export default function Collection() {
           </div>
         </section>
       </div>
-    </div>
+    </article>
   );
 }

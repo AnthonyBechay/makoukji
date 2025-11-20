@@ -3,7 +3,7 @@ import DynamicHeroVisual from '@/components/DynamicHeroVisual';
 
 export default function Home() {
   return (
-    <div className="min-h-screen bg-white">
+    <article className="min-h-screen bg-white">
       {/* Hero Section - Professional */}
       <section className="relative pt-40 pb-28 px-4 sm:px-6 lg:px-8 bg-gradient-to-b from-gray-50 to-white">
         <div className="max-w-7xl mx-auto">
@@ -186,6 +186,6 @@ export default function Home() {
           </div>
         </div>
       </section>
-    </div>
+    </article>
   );
 }

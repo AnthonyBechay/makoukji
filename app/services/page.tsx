@@ -92,7 +92,7 @@ export default function Services() {
   ];
 
   return (
-    <div className="min-h-screen pt-24 pb-20 px-4 sm:px-6 lg:px-8 bg-white">
+    <article className="min-h-screen pt-24 pb-20 px-4 sm:px-6 lg:px-8 bg-white">
       {/* Hero Section */}
       <section className="py-16 mb-16 border-b border-gray-200">
         <div className="max-w-7xl mx-auto text-center">
@@ -126,6 +126,53 @@ export default function Services() {
           <div className="mt-8 p-8 bg-[#fae633] rounded-lg text-white">
             <p className="text-lg leading-relaxed text-center">
               <strong>Ets. Georges Makoukji for autoglass</strong> offers a wide variety of window and windshield rubber for all vehicles, in addition to mirrors and plexiglas.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      {/* Key Services for Lebanon */}
+      <section className="max-w-7xl mx-auto mb-20">
+        <div className="text-center mb-12">
+          <div className="inline-block px-4 py-2 bg-[#fae633] text-white rounded-md text-sm font-semibold">
+            AUTO GLASS SERVICES IN LEBANON
+          </div>
+          <h2 className="text-4xl md:text-5xl font-bold mt-4 mb-4 text-gray-900">
+            Windshield & Glass Services in Beirut
+          </h2>
+          <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+            Fast, professional auto glass service for drivers across Dora, Beirut and all of Lebanon — including mobile glass service when you can&apos;t come to us.
+          </p>
+        </div>
+
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+          <div className="bg-white rounded-lg p-8 border border-gray-200 shadow-sm hover:shadow-md hover:border-[#fae633] transition-all duration-200">
+            <h3 className="text-2xl font-bold mb-4 text-gray-900">
+              Windshield Replacement
+            </h3>
+            <p className="text-gray-600 leading-relaxed">
+              Cracked or shattered windshield? We stock a huge range of OEM and high-quality aftermarket windshields for vehicles across Lebanon.
+              Our technicians in Dora, Beirut follow factory-approved installation methods so your car is safe, sealed, and ready for inspection.
+            </p>
+          </div>
+
+          <div className="bg-white rounded-lg p-8 border border-gray-200 shadow-sm hover:shadow-md hover:border-[#fae633] transition-all duration-200">
+            <h3 className="text-2xl font-bold mb-4 text-gray-900">
+              Chip & Crack Repair
+            </h3>
+            <p className="text-gray-600 leading-relaxed">
+              Small stone chip or hairline crack? In many cases we can repair instead of replace, saving you money and keeping the original factory seal.
+              Our team quickly stabilizes the damage before it spreads, using premium resins designed for Lebanon&apos;s hot sun and highway conditions.
+            </p>
+          </div>
+
+          <div className="bg-white rounded-lg p-8 border border-gray-200 shadow-sm hover:shadow-md hover:border-[#fae633] transition-all duration-200">
+            <h3 className="text-2xl font-bold mb-4 text-gray-900">
+              Window Tinting & UV Protection
+            </h3>
+            <p className="text-gray-600 leading-relaxed">
+              Upgrade your comfort with professional car tinting in Beirut. We offer heat-rejecting, UV-blocking films that handle Lebanon&apos;s summer
+              while keeping your interior protected and your car looking premium — always installed with clean, bubble-free results.
             </p>
           </div>
         </div>
@@ -203,6 +250,6 @@ export default function Services() {
           </Link>
         </div>
       </section>
-    </div>
+    </article>
   );
 }
