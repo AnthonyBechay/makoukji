@@ -62,7 +62,7 @@ export default function Navbar() {
           <div className="hidden md:block ml-6">
             <Link
               href="/contact"
-              className="px-6 py-2.5 bg-black text-white rounded-md font-semibold text-sm hover:bg-gray-900 transition-colors duration-200 shadow-sm"
+              className="px-6 py-2.5 bg-black text-white rounded-md font-semibold text-sm hover:bg-gray-900 transition-colors duration-200 shadow-sm btn-lift"
             >
               Get Quote
             </Link>
@@ -72,7 +72,7 @@ export default function Navbar() {
           <div className="md:hidden flex items-center gap-3">
             <a
               href="tel:01256297"
-              className="px-3 py-1.5 rounded-full bg-black text-white text-sm font-semibold shadow-md hover:bg-gray-900"
+              className="px-3 py-1.5 rounded-full bg-black text-white text-sm font-semibold shadow-md hover:bg-gray-900 btn-lift"
             >
               Call Now
             </a>

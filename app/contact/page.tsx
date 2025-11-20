@@ -67,7 +67,7 @@ export default function Contact() {
           <div className="mt-8 flex justify-center">
             <a
               href="#find-us"
-              className="px-6 py-3 bg-black text-white rounded-md font-semibold text-sm md:text-base hover:bg-gray-900 transition-colors"
+              className="px-6 py-3 bg-black text-white rounded-md font-semibold text-sm md:text-base hover:bg-gray-900 transition-colors btn-lift"
             >
               View Location
             </a>
@@ -182,7 +182,7 @@ export default function Contact() {
               <button
                 type="submit"
                 disabled={isSubmitting}
-                className="w-full px-8 py-3 bg-[#fae633] text-white rounded-md font-semibold text-lg hover:bg-[#d4c82a] transition-colors duration-200 shadow-md disabled:opacity-50 disabled:cursor-not-allowed"
+                className="w-full px-8 py-3 bg-[#fae633] text-white rounded-md font-semibold text-lg hover:bg-[#d4c82a] transition-colors duration-200 shadow-md disabled:opacity-50 disabled:cursor-not-allowed btn-lift"
               >
                 {isSubmitting ? 'Sending...' : 'Send Message'}
               </button>

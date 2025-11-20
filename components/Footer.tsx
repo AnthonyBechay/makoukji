@@ -44,7 +44,7 @@ export default function Footer() {
                 </svg>
               </a>
             </div>
-            <p className="text-sm text-gray-400 mt-6">
+            <p className="text-sm text-gray-300 mt-6">
               © {new Date().getFullYear()} Ets. Georges Makoukji. All rights reserved.
             </p>
           </div>
@@ -129,10 +129,10 @@ export default function Footer() {
         {/* Bottom Bar */}
         <div className="border-t border-gray-800 pt-8">
           <div className="flex flex-col md:flex-row justify-between items-center">
-            <p className="text-gray-400 text-sm mb-4 md:mb-0">
+            <p className="text-gray-300 text-sm mb-4 md:mb-0">
               Proudly serving Lebanon since 1964
             </p>
-            <p className="text-gray-400 text-sm">
+            <p className="text-gray-300 text-sm">
               Lebanon's most renowned autoglass company
             </p>
           </div>

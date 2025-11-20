@@ -69,13 +69,13 @@ export default function Collection() {
               <div className="flex flex-col sm:flex-row gap-4 justify-center pt-8">
                 <Link
                   href="/contact"
-                  className="px-8 py-3 bg-[#fae633] text-white rounded-md font-semibold text-lg hover:bg-[#d4c82a] transition-colors duration-200 shadow-md"
+                  className="px-8 py-3 bg-[#fae633] text-white rounded-md font-semibold text-lg hover:bg-[#d4c82a] transition-colors duration-200 shadow-md btn-lift"
                 >
                   Contact Us for Inquiries
                 </Link>
                 <Link
                   href="/services"
-                  className="px-8 py-3 border-2 border-[#fae633] text-[#fae633] rounded-md font-semibold text-lg hover:bg-[#fae633] hover:text-white transition-colors duration-200"
+                  className="px-8 py-3 border-2 border-[#fae633] text-[#fae633] rounded-md font-semibold text-lg hover:bg-[#fae633] hover:text-white transition-colors duration-200 btn-lift"
                 >
                   View Our Services
                 </Link>

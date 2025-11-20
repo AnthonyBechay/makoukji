@@ -26,13 +26,13 @@ export default function Home() {
               <div className="flex flex-col sm:flex-row gap-4 pt-4">
                 <Link
                   href="/contact"
-                  className="px-9 py-3.5 bg-[#fae633] text-white rounded-md font-semibold text-xl hover:bg-[#d4c82a] transition-colors duration-200 shadow-lg"
+                  className="px-9 py-3.5 bg-[#fae633] text-white rounded-md font-semibold text-xl hover:bg-[#d4c82a] transition-colors duration-200 shadow-lg btn-lift"
                 >
                   Get Free Quote
                 </Link>
                 <Link
                   href="/services"
-                  className="px-9 py-3.5 border-2 border-[#fae633] text-[#fae633] rounded-md font-semibold text-xl hover:bg-[#fae633] hover:text-white transition-colors duration-200"
+                  className="px-9 py-3.5 border-2 border-[#fae633] text-[#fae633] rounded-md font-semibold text-xl hover:bg-[#fae633] hover:text-white transition-colors duration-200 btn-lift"
                 >
                   View Our Services
                 </Link>
@@ -214,7 +214,7 @@ export default function Home() {
             </p>
             <Link
               href="/services"
-              className="inline-block px-8 py-3 bg-white text-[#fae633] rounded-md font-semibold hover:bg-gray-100 transition-colors duration-200"
+              className="inline-block px-8 py-3 bg-white text-[#fae633] rounded-md font-semibold hover:bg-gray-100 transition-colors duration-200 btn-lift"
             >
               View All Services
             </Link>
@@ -262,13 +262,13 @@ export default function Home() {
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Link
               href="/contact"
-              className="px-10 py-3 bg-[#fae633] text-white rounded-md font-semibold text-lg hover:bg-[#d4c82a] transition-colors duration-200 shadow-md"
+              className="px-10 py-3 bg-[#fae633] text-white rounded-md font-semibold text-lg hover:bg-[#d4c82a] transition-colors duration-200 shadow-md btn-lift"
             >
               Contact Us Today
             </Link>
             <Link
               href="/about"
-              className="px-10 py-3 border-2 border-white text-white rounded-md font-semibold text-lg hover:bg-white hover:text-gray-900 transition-colors duration-200"
+              className="px-10 py-3 border-2 border-white text-white rounded-md font-semibold text-lg hover:bg-white hover:text-gray-900 transition-colors duration-200 btn-lift"
             >
               Learn More About Us
             </Link>

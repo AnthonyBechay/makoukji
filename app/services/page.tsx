@@ -121,9 +121,9 @@ export default function Services() {
   ];
 
   return (
-    <article className="min-h-screen pt-24 pb-20 px-4 sm:px-6 lg:px-8 bg-white">
+    <article className="min-h-screen pt-24 pb-24 px-4 sm:px-6 lg:px-8 bg-white">
       {/* Hero Section */}
-      <section className="py-16 mb-16 border-b border-gray-200">
+      <section className="py-20 mb-20 border-b border-gray-200">
         <div className="max-w-7xl mx-auto text-center">
           <div className="inline-block mb-6 px-4 py-2 bg-[#fae633] text-white rounded-md text-sm font-semibold">
             OUR SERVICES
@@ -138,7 +138,7 @@ export default function Services() {
       </section>
 
       {/* Services Description */}
-      <section className="max-w-7xl mx-auto mb-20">
+      <section className="max-w-7xl mx-auto mb-24">
         <div className="bg-gray-50 rounded-lg p-12 md:p-16 border border-gray-200">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
             <div className="p-8 bg-white rounded-lg border border-gray-200">
@@ -161,12 +161,12 @@ export default function Services() {
       </section>
 
       {/* Services Grid */}
-      <section className="max-w-7xl mx-auto mb-20">
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+      <section className="max-w-7xl mx-auto mb-24">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 items-stretch">
           {services.map((service, index) => (
             <div
               key={index}
-              className="glass-effect bg-white/80 rounded-lg p-8 border border-white/40 shadow-lg transition-transform duration-300 hover:-translate-y-2 hover:shadow-2xl"
+              className="glass-effect bg-white/80 rounded-lg p-8 border border-white/40 shadow-lg transition-transform duration-300 hover:-translate-y-2 hover:shadow-2xl flex flex-col h-full"
             >
               <div className="w-16 h-16 bg-[#fae633] rounded-lg flex items-center justify-center mb-6 text-white">
                 {service.icon}
@@ -174,7 +174,7 @@ export default function Services() {
               <h3 className="text-2xl font-bold mb-4 text-gray-900">
                 {service.title}
               </h3>
-              <p className="text-gray-600 leading-relaxed">
+              <p className="text-gray-600 leading-relaxed flex-1">
                 {service.description}
               </p>
             </div>
@@ -226,7 +226,7 @@ export default function Services() {
           </p>
           <Link
             href="/contact"
-            className="inline-block px-10 py-3 bg-white text-[#fae633] rounded-md font-semibold text-lg hover:bg-gray-100 transition-colors duration-200 shadow-md"
+            className="inline-block px-10 py-3 bg-white text-[#fae633] rounded-md font-semibold text-lg hover:bg-gray-100 transition-colors duration-200 shadow-md btn-lift"
           >
             Contact Us
           </Link>
