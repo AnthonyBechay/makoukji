@@ -138,16 +138,24 @@ export default function Home() {
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             {[
               {
-                name: 'Ali K.',
-                text: 'They replaced my windshield in Dora the same day. Professional work and no leaks at all.',
+                name: 'Lina Akl',
+                text: 'Had to change my car glass urgently due to a small incident that cracked my front glass. Makoukji autoglass offered a fast service. The result is impeccable. Highly recommended!',
               },
               {
-                name: 'Rita M.',
-                text: 'Very organized team. They found the exact glass for my car and explained every step clearly.',
+                name: 'Anthony Bechay',
+                text: 'My car is a collection and only Makoukji auto glass team could replace my windshield in a very safe and professional way.',
               },
               {
-                name: 'Karim S.',
-                text: 'We trust Makoukji for our company vehicles. Fast service and always the right glass.',
+                name: 'Fady Karim',
+                text: 'Wonderful service. Excellent quality and price.',
+              },
+              {
+                name: 'Joseph Ghaleb',
+                text: 'Only place I found an original windshield after long shopping.',
+              },
+              {
+                name: 'Ahmad Hafez',
+                text: 'In 1 word. No 1',
               },
             ].map((review, index) => (
               <div
@@ -166,7 +174,7 @@ export default function Home() {
                   <span className="font-semibold text-gray-900">
                     {review.name}
                   </span>{' '}
-                  • Google-style review
+                  • 5-star Google review
                 </p>
               </div>
             ))}
