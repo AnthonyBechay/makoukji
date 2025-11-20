@@ -1,5 +1,6 @@
 import Link from 'next/link';
 import DynamicHeroVisual from '@/components/DynamicHeroVisual';
+import TestimonialsSlider from '@/components/TestimonialsSlider';
 
 export default function Home() {
   return (
@@ -135,50 +136,7 @@ export default function Home() {
               A sample of the kind of feedback we receive from customers across Beirut, Dora, and all over Lebanon.
             </p>
           </div>
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            {[
-              {
-                name: 'Lina Akl',
-                text: 'Had to change my car glass urgently due to a small incident that cracked my front glass. Makoukji autoglass offered a fast service. The result is impeccable. Highly recommended!',
-              },
-              {
-                name: 'Anthony Bechay',
-                text: 'My car is a collection and only Makoukji auto glass team could replace my windshield in a very safe and professional way.',
-              },
-              {
-                name: 'Fady Karim',
-                text: 'Wonderful service. Excellent quality and price.',
-              },
-              {
-                name: 'Joseph Ghaleb',
-                text: 'Only place I found an original windshield after long shopping.',
-              },
-              {
-                name: 'Ahmad Hafez',
-                text: 'In 1 word. No 1',
-              },
-            ].map((review, index) => (
-              <div
-                key={index}
-                className="glass-effect rounded-lg p-8 border border-white/40 shadow-lg bg-white/70"
-              >
-                <div className="flex items-center gap-1 text-yellow-400 mb-4">
-                  {Array.from({ length: 5 }).map((_, i) => (
-                    <span key={i}>★</span>
-                  ))}
-                </div>
-                <p className="text-gray-800 mb-4 leading-relaxed">
-                  {review.text}
-                </p>
-                <p className="text-gray-600 text-sm">
-                  <span className="font-semibold text-gray-900">
-                    {review.name}
-                  </span>{' '}
-                  • 5-star Google review
-                </p>
-              </div>
-            ))}
-          </div>
+          <TestimonialsSlider />
         </div>
       </section>
 
