@@ -111,15 +111,6 @@ export default function Navbar() {
       {isOpen && (
         <div className="md:hidden bg-[#fae633] border-t border-[#d4c82a] shadow-lg">
           <div className="px-4 pt-4 pb-6 space-y-1">
-            <div className="px-4 py-3 border-b border-[#d4c82a] mb-4">
-              <Image 
-                src="/makoukji-logo.png" 
-                alt="Makoukji Auto Glass Logo" 
-                width={220} 
-                height={66}
-                className="h-14 w-auto"
-              />
-            </div>
             {[
               { href: '/', label: 'Home' },
               { href: '/about', label: 'About' },
