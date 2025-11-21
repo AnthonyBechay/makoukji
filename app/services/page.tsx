@@ -226,27 +226,27 @@ export default function Services() {
               {
                 label: 'Super Cars',
                 icon: '🏎️',
-                desc: 'Performance and luxury vehicles.',
+                desc: 'High-performance and luxury sports cars needing precision glass.',
               },
               {
                 label: 'Trucks',
                 icon: '🚛',
-                desc: 'Light and heavy-duty trucks.',
+                desc: 'Light and heavy-duty trucks used for commercial transport.',
               },
               {
                 label: 'Heavy Machinery',
                 icon: '🏗️',
-                desc: 'Excavators, cranes and machines.',
+                desc: 'Excavators, cranes and industrial machines on tough job sites.',
               },
               {
                 label: 'Buses',
                 icon: '🚌',
-                desc: 'Passenger buses and coaches.',
+                desc: 'Passenger buses and coaches carrying people safely every day.',
               },
               {
                 label: 'Boats & Yachts',
                 icon: '⛵',
-                desc: 'Marine and coastal vessels.',
+                desc: 'Boats and yachts exposed to sun, saltwater and coastal weather.',
               },
             ].map((item, index) => (
               <div
