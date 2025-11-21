@@ -165,29 +165,32 @@ export default function About() {
 
       {/* Expertise Section */}
       <section className="max-w-7xl mx-auto mb-24 safe-x-pad">
-        <div className="bg-white rounded-lg p-12 md:p-16 border border-gray-200 shadow-sm">
+        <div className="bg-white rounded-2xl p-10 md:p-16 border border-gray-200 shadow-md">
           <div className="text-center mb-12">
-            <div className="inline-block px-4 py-2 bg-[#fae633] text-white rounded-md mb-6 text-sm font-semibold">
-              OUR EXPERTISE
+            <div className="inline-block px-5 py-2 bg-[#fae633] text-white rounded-full mb-6 text-xs md:text-sm font-semibold tracking-[0.18em] uppercase">
+              Our Expertise
             </div>
-            <h2 className="text-4xl md:text-5xl font-bold mb-6 text-gray-900">
+            <h2 className="text-4xl md:text-5xl font-bold mb-4 text-gray-900">
               Specialized Services
             </h2>
+            <p className="text-lg text-gray-600 max-w-3xl mx-auto">
+              From everyday cars to the biggest trucks and buses, Makoukji handles every type of autoglass job with factory-level precision and care.
+            </p>
           </div>
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-            <div className="p-8 bg-gray-50 rounded-lg border border-gray-200">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-10">
+            <div className="p-8 bg-gray-50 rounded-xl border border-gray-200 shadow-sm">
               <p className="text-lg text-gray-700 leading-relaxed">
                 Ets. Georges Makoukji for autoglass is specialized in the area of autoglass (windshields, backlights, side windows and quarters) for all vehicle brands from the smallest car to the biggest truck or bus, in addition to yachts.
               </p>
             </div>
-            <div className="p-8 bg-gray-50 rounded-lg border border-gray-200">
+            <div className="p-8 bg-gray-50 rounded-xl border border-gray-200 shadow-sm">
               <p className="text-lg text-gray-700 leading-relaxed">
                 We have a trained team that uses the most important products in the market today to help you solve all the problems that you encounter with your autoglass.
               </p>
             </div>
           </div>
-          <div className="mt-8 p-8 bg-[#fae633] rounded-lg text-white">
-            <p className="text-lg leading-relaxed text-center">
+          <div className="mt-4 p-8 md:p-10 bg-[#fae633] rounded-2xl text-gray-900 text-center shadow-lg">
+            <p className="text-lg md:text-xl leading-relaxed font-medium">
               Ets. Georges Makoukji for autoglass offers a wide variety of window and windshield rubber for all vehicles, in addition to mirrors and plexiglas.
             </p>
           </div>
