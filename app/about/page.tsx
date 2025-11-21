@@ -73,14 +73,14 @@ export default function About() {
                 <span>Since 1964</span>
               </div>
               <div className="w-32 h-32 md:w-40 md:h-40 rounded-full bg-white/15 backdrop-blur-md flex items-center justify-center shadow-[0_18px_40px_rgba(0,0,0,0.25)]">
-                <span className="text-3xl md:text-4xl font-extrabold">1964</span>
+                <span className="text-3xl md:text-4xl font-extrabold">60+</span>
               </div>
               <div className="space-y-1">
                 <p className="text-xl md:text-2xl font-bold tracking-wide">
-                  Over 60 Years
+                  Years of Excellence
                 </p>
                 <p className="text-sm md:text-base text-white/90">
-                  of Excellence in Auto Glass
+                  Lebanon&apos;s most renowned auto glass company
                 </p>
               </div>
               <div className="mt-2 flex w-full max-w-xs justify-center gap-2">
