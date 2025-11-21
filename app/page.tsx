@@ -152,7 +152,7 @@ export default function Home() {
             </p>
           </div>
 
-          <div className="grid grid-cols-2 md:grid-cols-5 gap-4 md:gap-6 mb-10 sm:mb-12">
+          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-5 gap-4 md:gap-6 mb-10 sm:mb-12">
             {[
               'CARS',
               'SUPER CARS',
@@ -164,7 +164,7 @@ export default function Home() {
                 key={index}
                 className="glass-effect bg-white/80 p-5 sm:p-6 rounded-xl border border-white/60 text-center transition-transform duration-300 hover:-translate-y-2 hover:shadow-2xl gpu-transform"
               >
-                <h3 className="text-sm sm:text-base font-semibold text-gray-900 tracking-wide">
+                <h3 className="text-base sm:text-lg font-semibold text-gray-900 tracking-wide">
                   {type}
                 </h3>
               </div>

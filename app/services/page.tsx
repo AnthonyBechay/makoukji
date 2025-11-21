@@ -221,7 +221,7 @@ export default function Services() {
               From super cars to heavy machinery, buses and boats, we provide comprehensive autoglass solutions for every vehicle category.
             </p>
           </div>
-          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-6">
+          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-6">
             {[
               {
                 label: 'Super Cars',

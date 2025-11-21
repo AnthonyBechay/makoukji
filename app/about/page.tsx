@@ -17,14 +17,14 @@ export default function About() {
           <h1 className="text-5xl md:text-6xl font-bold mb-6 text-gray-900">
             Lebanon's Most Renowned Auto Glass Company
           </h1>
-          <div className="flex flex-wrap justify-center gap-4 mb-8">
-            <div className="px-6 py-3 bg-[#fae633] text-white rounded-md font-semibold shadow-md">
+          <div className="flex flex-col sm:flex-wrap sm:flex-row justify-center gap-3 sm:gap-4 mb-8">
+            <div className="w-full sm:w-auto text-center px-6 py-3 bg-[#fae633] text-white rounded-md font-semibold text-sm sm:text-base shadow-md">
               Established 1964
             </div>
-            <div className="px-6 py-3 bg-gray-900 text-white rounded-md font-semibold shadow-md">
+            <div className="w-full sm:w-auto text-center px-6 py-3 bg-gray-900 text-white rounded-md font-semibold text-sm sm:text-base shadow-md">
               60+ Years of Excellence
             </div>
-            <div className="px-6 py-3 bg-[#fae633] text-white rounded-md font-semibold shadow-md">
+            <div className="w-full sm:w-auto text-center px-6 py-3 bg-[#fae633] text-white rounded-md font-semibold text-sm sm:text-base shadow-md">
               Lebanon's Reference
             </div>
           </div>
