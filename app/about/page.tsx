@@ -109,23 +109,29 @@ export default function About() {
                 Our aim is to maintain a <strong className="text-white">high quality service</strong> in order to best serve our clients and to prove our presence in the Lebanese and international market. Ets. Georges Makoukji specializes in the area of autoglass and rubbers for all vehicles, generators and machinery.
               </p>
               <div className="grid grid-cols-1 md:grid-cols-3 gap-6 text-center">
-                <div className="w-full mx-auto md:mx-0 p-7 md:p-6 bg-white/5 rounded-xl border border-white/10">
-                  <div className="text-3xl sm:text-3xl font-bold text-white mb-2">
+                <div className="w-full mx-auto md:mx-0 px-6 py-6 md:p-6 bg-white/5 rounded-xl border border-white/10">
+                  <div className="text-2xl md:text-3xl font-bold text-white mb-1">
                     Comprehensive
                   </div>
-                  <div className="text-base text-gray-300">Product Range</div>
+                  <div className="text-sm md:text-base text-gray-300 leading-snug">
+                    Product Range
+                  </div>
                 </div>
-                <div className="w-full mx-auto md:mx-0 p-7 md:p-6 bg-white/5 rounded-xl border border-white/10">
-                  <div className="text-3xl sm:text-3xl font-bold text-white mb-2">
+                <div className="w-full mx-auto md:mx-0 px-6 py-6 md:p-6 bg-white/5 rounded-xl border border-white/10">
+                  <div className="text-2xl md:text-3xl font-bold text-white mb-1">
                     Best
                   </div>
-                  <div className="text-base text-gray-300">Quality</div>
+                  <div className="text-sm md:text-base text-gray-300 leading-snug">
+                    Quality
+                  </div>
                 </div>
-                <div className="w-full mx-auto md:mx-0 p-7 md:p-6 bg-white/5 rounded-xl border border-white/10">
-                  <div className="text-3xl sm:text-3xl font-bold text-white mb-2">
+                <div className="w-full mx-auto md:mx-0 px-6 py-6 md:p-6 bg-white/5 rounded-xl border border-white/10">
+                  <div className="text-2xl md:text-3xl font-bold text-white mb-1">
                     Competitive
                   </div>
-                  <div className="text-base text-gray-300">Prices</div>
+                  <div className="text-sm md:text-base text-gray-300 leading-snug">
+                    Prices
+                  </div>
                 </div>
               </div>
             </div>
