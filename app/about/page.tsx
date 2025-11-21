@@ -59,8 +59,8 @@ export default function About() {
           {/* Visual Image */}
           <div className="relative h-72 sm:h-80 md:h-96 rounded-2xl overflow-hidden shadow-xl">
             <Image
-              src="/images/about-glass.jpg"
-              alt="Technician replacing a car windshield at Makoukji Auto Glass"
+              src="/window.svg"
+              alt="Stylized car glass illustration"
               fill
               sizes="(min-width: 1024px) 480px, 100vw"
               className="object-cover"
