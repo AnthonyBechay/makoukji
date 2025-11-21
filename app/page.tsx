@@ -152,7 +152,7 @@ export default function Home() {
             </p>
           </div>
 
-          <div className="grid grid-cols-2 md:grid-cols-5 gap-4 md:gap-6 mb-8">
+          <div className="grid grid-cols-2 md:grid-cols-5 gap-4 md:gap-6 mb-10 sm:mb-12">
             {[
               'CARS',
               'SUPER CARS',
@@ -171,13 +171,13 @@ export default function Home() {
             ))}
           </div>
 
-          <div className="bg-[#fae633] rounded-2xl px-8 sm:px-10 py-10 sm:py-12 text-center text-gray-900 shadow-lg mt-8 sm:mt-10">
-            <p className="text-lg sm:text-xl mb-6 font-medium">
+          <div className="bg-[#fae633] rounded-2xl px-8 sm:px-12 py-12 sm:py-16 text-center text-gray-900 shadow-lg mt-12 sm:mt-16">
+            <p className="text-lg sm:text-xl mb-8 font-medium">
               Not sure which category your vehicle fits in? Contact us and we&apos;ll guide you to the right glass replacement.
             </p>
             <Link
               href="/services"
-              className="inline-block px-8 py-3 bg-white text-[#fae633] rounded-md font-semibold hover:bg-gray-100 transition-colors duration-200 btn-lift"
+              className="inline-block px-10 py-4 bg-white text-[#fae633] rounded-lg font-semibold text-lg sm:text-xl hover:bg-gray-100 transition-colors duration-200 shadow-md btn-lift"
             >
               View All Services
             </Link>
