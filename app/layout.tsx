@@ -35,6 +35,11 @@ export const metadata: Metadata = {
     locale: "en_LB",
     siteName: "Makoukji Auto Glass",
   },
+  icons: {
+    icon: "/makoukji-logo.png",
+    shortcut: "/makoukji-logo.png",
+    apple: "/makoukji-logo.png",
+  },
 };
 
 export default function RootLayout({
