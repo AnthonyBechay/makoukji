@@ -253,7 +253,9 @@ export default function Services() {
                 key={index}
                 className="group bg-white/10 backdrop-blur-sm rounded-lg p-8 border border-white/20 text-center transition-colors duration-200 hover:bg-white/15"
               >
-                <div className="text-4xl mb-3">{item.icon}</div>
+                <div className="text-4xl mb-3 transition-opacity duration-200 group-hover:opacity-0">
+                  {item.icon}
+                </div>
                 <div className="relative h-12 flex items-center justify-center">
                   <div className="font-semibold text-base text-center transition-opacity duration-200 group-hover:opacity-0">
                     {item.label}
