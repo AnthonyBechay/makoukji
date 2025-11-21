@@ -223,18 +223,41 @@ export default function Services() {
           </div>
           <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-6">
             {[
-              { label: 'Super Cars', icon: '🏎️' },
-              { label: 'Trucks', icon: '🚛' },
-              { label: 'Heavy Machinery', icon: '🏗️' },
-              { label: 'Buses', icon: '🚌' },
-              { label: 'Boats & Yachts', icon: '⛵' },
+              {
+                label: 'Super Cars',
+                icon: '🏎️',
+                desc: 'High‑end and performance vehicles that require precise, factory‑spec autoglass.',
+              },
+              {
+                label: 'Trucks',
+                icon: '🚛',
+                desc: 'Light and heavy trucks used for transport and logistics across Lebanon.',
+              },
+              {
+                label: 'Heavy Machinery',
+                icon: '🏗️',
+                desc: 'Excavators, cranes and industrial machines working on demanding job sites.',
+              },
+              {
+                label: 'Buses',
+                icon: '🚌',
+                desc: 'Passenger buses and coaches where safety and visibility are critical.',
+              },
+              {
+                label: 'Boats & Yachts',
+                icon: '⛵',
+                desc: 'Marine vessels that need specialized glass for coastal and offshore conditions.',
+              },
             ].map((item, index) => (
               <div
                 key={index}
-                className="bg-white/10 backdrop-blur-sm rounded-lg p-8 border border-white/20 text-center"
+                className="group bg-white/10 backdrop-blur-sm rounded-lg p-8 border border-white/20 text-center transition-colors duration-200 hover:bg-white/15"
               >
                 <div className="text-4xl mb-3">{item.icon}</div>
-                <div className="font-semibold text-lg">{item.label}</div>
+                <div className="font-semibold text-lg mb-2">{item.label}</div>
+                <p className="text-sm text-gray-200 opacity-0 group-hover:opacity-100 transition-opacity duration-200">
+                  {item.desc}
+                </p>
               </div>
             ))}
           </div>
