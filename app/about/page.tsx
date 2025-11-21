@@ -55,15 +55,40 @@ export default function About() {
             </div>
           </div>
 
-          {/* Visual Image */}
-          <div className="relative h-72 sm:h-80 md:h-96 rounded-2xl overflow-hidden shadow-xl">
-            <img
-              src="/window.svg"
-              alt="Stylized car glass illustration"
-              className="w-full h-full object-cover"
-              loading="lazy"
-              decoding="async"
+          {/* Visual Yellow Box */}
+          <div className="relative h-72 sm:h-80 md:h-96 rounded-3xl overflow-hidden shadow-[0_24px_70px_rgba(0,0,0,0.18)] bg-gradient-to-br from-[#fae633] via-[#fae633] to-[#d4c82a]">
+            {/* soft light */}
+            <div
+              className="absolute inset-0 opacity-40"
+              style={{
+                background: `
+                  radial-gradient(circle at 20% 20%, rgba(255,255,255,0.35) 0%, transparent 55%),
+                  radial-gradient(circle at 80% 80%, rgba(255,255,255,0.25) 0%, transparent 55%)
+                `,
+              }}
             />
+            <div className="relative h-full flex flex-col items-center justify-center text-center text-white px-6 space-y-5">
+              <div className="inline-flex items-center gap-3 px-5 py-2 rounded-full bg-black/60 backdrop-blur-sm text-xs font-semibold uppercase tracking-[0.15em]">
+                <span className="w-2 h-2 rounded-full bg-[#fae633]" />
+                <span>Since 1964</span>
+              </div>
+              <div className="w-32 h-32 md:w-40 md:h-40 rounded-full bg-white/15 backdrop-blur-md flex items-center justify-center shadow-[0_18px_40px_rgba(0,0,0,0.25)]">
+                <span className="text-3xl md:text-4xl font-extrabold">1964</span>
+              </div>
+              <div className="space-y-1">
+                <p className="text-xl md:text-2xl font-bold tracking-wide">
+                  Over 60 Years
+                </p>
+                <p className="text-sm md:text-base text-white/90">
+                  of Excellence in Auto Glass
+                </p>
+              </div>
+              <div className="mt-2 flex w-full max-w-xs justify-center gap-2">
+                <span className="h-1 flex-1 rounded-full bg-white/60" />
+                <span className="h-1 flex-1 rounded-full bg-white/30" />
+                <span className="h-1 flex-1 rounded-full bg-white/20" />
+              </div>
+            </div>
           </div>
 
         </div>
