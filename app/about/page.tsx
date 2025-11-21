@@ -56,15 +56,29 @@ export default function About() {
           </div>
 
           {/* Visual */}
-          <div className="relative h-[400px] rounded-lg overflow-hidden bg-gradient-to-br from-[#fae633] to-[#d4c82a] shadow-xl">
-            <div className="absolute inset-0 flex items-center justify-center">
-              <div className="text-center text-white space-y-6 p-8">
-                <div className="w-32 h-32 bg-white/20 backdrop-blur-sm rounded-full flex items-center justify-center shadow-lg mx-auto">
-                  <span className="text-5xl font-bold">1964</span>
-                </div>
-                <p className="text-2xl font-bold">Over 60 Years</p>
-                <p className="text-gray-200">of Excellence</p>
+          <div className="relative h-[360px] md:h-[420px] rounded-3xl overflow-hidden bg-gradient-to-br from-[#fae633] via-[#fae633] to-[#d4c82a] shadow-[0_24px_80px_rgba(0,0,0,0.25)]">
+            {/* soft light spots */}
+            <div
+              className="absolute inset-0 opacity-40"
+              style={{
+                background: `
+                  radial-gradient(circle at 20% 20%, rgba(255,255,255,0.35) 0%, transparent 55%),
+                  radial-gradient(circle at 80% 70%, rgba(255,255,255,0.25) 0%, transparent 55%)
+                `,
+              }}
+            />
+            <div className="relative h-full flex flex-col items-center justify-center text-center text-white space-y-6 px-6">
+              <div className="w-40 h-40 md:w-48 md:h-48 rounded-full bg-gradient-to-br from-[#fff7bf] to-[#f4d93f] shadow-[0_18px_40px_rgba(0,0,0,0.28)] flex items-center justify-center">
+                <span className="text-4xl md:text-5xl font-extrabold drop-shadow-[0_4px_10px_rgba(0,0,0,0.35)]">
+                  1964
+                </span>
               </div>
+              <p className="text-2xl md:text-3xl font-bold tracking-wide">
+                Over 60 Years
+              </p>
+              <p className="text-base md:text-lg text-white/90 tracking-wide">
+                of Excellence
+              </p>
             </div>
           </div>
         </div>
