@@ -55,11 +55,6 @@ export default function DynamicHeroVisual() {
         }}
       ></div>
 
-      {/* Subtle glass frame behind the main card */}
-      <div className="absolute inset-0 flex items-center justify-center pointer-events-none">
-        <div className="w-[82%] h-[60%] rounded-[2.5rem] border border-white/22 bg-white/5 shadow-[0_32px_80px_rgba(0,0,0,0.35)]" />
-      </div>
-
       {/* Main content */}
       <div className="absolute inset-0 flex items-center justify-center p-8">
         <div className="relative z-10 w-full max-w-md">
