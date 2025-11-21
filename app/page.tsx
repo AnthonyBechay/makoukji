@@ -33,7 +33,7 @@ export default function Home() {
                 </Link>
                 <Link
                   href="/services"
-                  className="px-9 py-3.5 border-2 border-[#fae633] bg-white text-[#fae633] rounded-md font-semibold text-xl hover:bg-[#fae633] hover:text-black transition-colors duration-200 shadow-md btn-lift"
+                  className="px-9 py-3.5 bg-black text-white rounded-md font-semibold text-xl hover:bg-[#fae633] hover:text-black transition-colors duration-200 shadow-md btn-lift"
                 >
                   View Our Services
                 </Link>
