@@ -27,13 +27,13 @@ export default function Home() {
               <div className="flex flex-col sm:flex-row gap-4 pt-4">
                 <Link
                   href="/contact"
-                  className="px-9 py-3.5 bg-[#fae633] text-white rounded-md font-semibold text-xl hover:bg-[#d4c82a] transition-colors duration-200 shadow-lg btn-lift"
+                  className="px-9 py-3.5 bg-[#fae633] text-black rounded-md font-semibold text-xl hover:bg-[#d4c82a] transition-colors duration-200 shadow-lg btn-lift"
                 >
                   Get Free Quote
                 </Link>
                 <Link
                   href="/services"
-                  className="px-9 py-3.5 border-2 border-[#fae633] text-[#fae633] rounded-md font-semibold text-xl hover:bg-[#fae633] hover:text-white transition-colors duration-200 btn-lift"
+                  className="px-9 py-3.5 border-2 border-[#fae633] bg-white text-[#fae633] rounded-md font-semibold text-xl hover:bg-[#fae633] hover:text-black transition-colors duration-200 shadow-md btn-lift"
                 >
                   View Our Services
                 </Link>
