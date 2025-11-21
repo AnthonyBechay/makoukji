@@ -51,10 +51,10 @@ export default function Home() {
         <div className="max-w-7xl mx-auto">
           <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
             {[
-              { number: 'Same-Day', label: 'Fast Windshield Replacement', icon: '✓' },
-              { number: 'Expert', label: 'Specialized Autoglass Team', icon: '✓' },
-              { number: 'Premium', label: 'High-Quality Glass & Materials', icon: '✓' },
-              { number: 'All Types', label: 'From Cars to Trucks & Buses', icon: '✓' },
+              { number: '60+', label: 'Years of Excellence' },
+              { number: '1500', label: 'Sq Meters Warehouse' },
+              { number: '100%', label: 'Quality Guaranteed' },
+              { number: 'All', label: 'Car Glass Types' },
             ].map((stat, index) => (
               <div
                 key={index}
