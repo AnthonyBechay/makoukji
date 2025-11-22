@@ -140,6 +140,44 @@ export default function Home() {
         </div>
       </section>
 
+      {/* Insurance Partners */}
+      <section className="py-16 px-4 sm:px-6 lg:px-8 bg-gray-50 safe-x-pad">
+        <div className="max-w-7xl mx-auto">
+          <div className="text-center mb-10">
+            <h2 className="text-3xl md:text-4xl font-bold mb-4 text-gray-900">
+              Trusted by Major Insurance Companies
+            </h2>
+            <p className="text-lg md:text-xl text-gray-600 max-w-2xl mx-auto">
+              We work with most of the leading insurance companies in Lebanon and are trusted to handle their autoglass claims quickly, correctly, and with full documentation.
+            </p>
+          </div>
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+            {[
+              {
+                title: 'Most Major Insurers',
+                desc: 'We collaborate with a wide network of insurance companies across Lebanon for autoglass replacement.',
+              },
+              {
+                title: 'Smooth Claim Handling',
+                desc: 'Our team helps you with the paperwork so your windshield or glass claim is processed as fast as possible.',
+              },
+              {
+                title: 'Trusted Repair Partner',
+                desc: 'Insurers rely on our experience and quality to keep their clients safe and satisfied on the road.',
+              },
+            ].map((item, index) => (
+              <div
+                key={index}
+                className="bg-white rounded-xl border border-gray-200 shadow-sm p-6 text-center"
+              >
+                <h3 className="text-xl font-semibold mb-3 text-gray-900">{item.title}</h3>
+                <p className="text-gray-600 text-sm md:text-base leading-relaxed">{item.desc}</p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
       {/* Vehicle Types We Serve */}
       <section className="py-20 px-4 sm:px-6 lg:px-8 bg-white safe-x-pad">
         <div className="max-w-7xl mx-auto">
