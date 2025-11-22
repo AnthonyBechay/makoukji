@@ -69,73 +69,58 @@ export default function Home() {
       </section>
 
       {/* Why Choose Us - Professional */}
-      <section className="py-8 md:py-20 px-4 sm:px-6 lg:px-8 bg-gray-50 safe-x-pad">
+      <section className="py-20 px-4 sm:px-6 lg:px-8 bg-gray-50 safe-x-pad">
         <div className="max-w-7xl mx-auto">
-          {/* Simple mobile version */}
-          <div className="md:hidden">
-            <h2 className="text-2xl font-bold mb-3 text-gray-900 text-center">
+          <div className="text-center mb-16">
+            <h2 className="text-4xl md:text-5xl font-bold mb-4 text-gray-900">
               Why Choose Makoukji?
             </h2>
-            <ul className="text-sm text-gray-700 space-y-1 list-disc pl-5">
-              <li>Safety-first glass installation</li>
-              <li>Perfect fit for every vehicle</li>
-              <li>Fast, clean, professional service</li>
-            </ul>
+            <p className="text-xl text-gray-600 max-w-2xl mx-auto">
+              Engineered installations, safety-first workmanship, and a dedicated team focused on keeping you and your passengers protected on every drive.
+            </p>
           </div>
-
-          {/* Original detailed desktop layout */}
-          <div className="hidden md:block">
-            <div className="text-center mb-16">
-              <h2 className="text-4xl md:text-5xl font-bold mb-4 text-gray-900">
-                Why Choose Makoukji?
-              </h2>
-              <p className="text-xl text-gray-600 max-w-2xl mx-auto">
-                Engineered installations, safety-first workmanship, and a dedicated team focused on keeping you and your passengers protected on every drive.
-              </p>
-            </div>
-            
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-              {[
-                {
-                  title: 'Safety-First Installation',
-                  description: 'We follow strict installation procedures and use premium adhesives to restore the structural strength of your vehicle and keep you safe in an accident.',
-                  icon: (
-                    <svg className="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M20 7l-8-4-8 4m16 0l-8 4m8-4v10l-8 4m0-10L4 7m8 4v10M4 7v10l8 4" />
-                    </svg>
-                  ),
-                },
-                {
-                  title: 'Perfect Fit for Every Vehicle',
-                  description: 'From daily drivers to classic and luxury cars, every glass is aligned and sealed with millimeter precision to prevent leaks, wind noise, and vibration.',
-                  icon: (
-                    <svg className="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
-                    </svg>
-                  ),
-                },
-                {
-                  title: 'Fast, Professional Service',
-                  description: 'Organised workflow, industrial warehouse, and a specialised team mean your car is handled quickly, cleanly, and with clear communication at every step.',
-                  icon: (
-                    <svg className="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z" />
-                    </svg>
-                  ),
-                },
-              ].map((feature, index) => (
-                <div
-                  key={index}
-                  className="bg-white p-8 rounded-lg border border-gray-200 shadow-sm hover:shadow-md transition-shadow duration-200"
-                >
-                  <div className="w-16 h-16 bg-[#fae633] rounded-lg flex items-center justify-center mb-6 text-white">
-                    {feature.icon}
-                  </div>
-                  <h3 className="text-2xl font-bold mb-4 text-gray-900">{feature.title}</h3>
-                  <p className="text-gray-600 leading-relaxed">{feature.description}</p>
+          
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+            {[
+              {
+                title: 'Safety-First Installation',
+                description: 'We follow strict installation procedures and use premium adhesives to restore the structural strength of your vehicle and keep you safe in an accident.',
+                icon: (
+                  <svg className="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M20 7l-8-4-8 4m16 0l-8 4m8-4v10l-8 4m0-10L4 7m8 4v10M4 7v10l8 4" />
+                  </svg>
+                ),
+              },
+              {
+                title: 'Perfect Fit for Every Vehicle',
+                description: 'From daily drivers to classic and luxury cars, every glass is aligned and sealed with millimeter precision to prevent leaks, wind noise, and vibration.',
+                icon: (
+                  <svg className="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
+                  </svg>
+                ),
+              },
+              {
+                title: 'Fast, Professional Service',
+                description: 'Organised workflow, industrial warehouse, and a specialised team mean your car is handled quickly, cleanly, and with clear communication at every step.',
+                icon: (
+                  <svg className="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z" />
+                  </svg>
+                ),
+              },
+            ].map((feature, index) => (
+              <div
+                key={index}
+                className="bg-white p-8 rounded-lg border border-gray-200 shadow-sm hover:shadow-md transition-shadow duration-200"
+              >
+                <div className="w-16 h-16 bg-[#fae633] rounded-lg flex items-center justify-center mb-6 text-white">
+                  {feature.icon}
                 </div>
-              ))}
-            </div>
+                <h3 className="text-2xl font-bold mb-4 text-gray-900">{feature.title}</h3>
+                <p className="text-gray-600 leading-relaxed">{feature.description}</p>
+              </div>
+            ))}
           </div>
         </div>
       </section>
