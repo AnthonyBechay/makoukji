@@ -65,6 +65,9 @@ export default function Home() {
               </div>
             ))}
           </div>
+          <p className="mt-6 text-center text-sm md:text-base text-gray-600">
+            We also work with most major insurance companies in Lebanon to make your autoglass claim as easy as possible.
+          </p>
         </div>
       </section>
 
@@ -125,21 +128,6 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Testimonials - Trusted by Drivers in Lebanon */}
-      <section className="py-20 px-4 sm:px-6 lg:px-8 bg-white safe-x-pad">
-        <div className="max-w-7xl mx-auto">
-          <div className="text-center mb-16">
-            <h2 className="text-4xl md:text-5xl font-bold mb-4 text-gray-900">
-              Trusted by Drivers in Lebanon
-            </h2>
-            <p className="text-xl text-gray-600 max-w-2xl mx-auto">
-              A sample of the kind of feedback we receive from customers across Beirut, Dora, and all over Lebanon.
-            </p>
-          </div>
-          <TestimonialsSlider />
-        </div>
-      </section>
-
       {/* Insurance Partners */}
       <section className="py-16 px-4 sm:px-6 lg:px-8 bg-gray-50 safe-x-pad">
         <div className="max-w-7xl mx-auto">
@@ -175,6 +163,21 @@ export default function Home() {
               </div>
             ))}
           </div>
+        </div>
+      </section>
+
+      {/* Testimonials - Trusted by Drivers in Lebanon */}
+      <section className="py-20 px-4 sm:px-6 lg:px-8 bg-white safe-x-pad">
+        <div className="max-w-7xl mx-auto">
+          <div className="text-center mb-16">
+            <h2 className="text-4xl md:text-5xl font-bold mb-4 text-gray-900">
+              Trusted by Drivers in Lebanon
+            </h2>
+            <p className="text-xl text-gray-600 max-w-2xl mx-auto">
+              A sample of the kind of feedback we receive from customers across Beirut, Dora, and all over Lebanon.
+            </p>
+          </div>
+          <TestimonialsSlider />
         </div>
       </section>
 
