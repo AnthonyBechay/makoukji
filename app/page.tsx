@@ -12,7 +12,7 @@ export default function Home() {
             {/* Left Content */}
             <div className="text-gray-900 space-y-12">
               <div className="inline-block px-6 py-3 bg-[#fae633] text-gray-900 rounded-md text-lg font-semibold tracking-wide shadow-md">
-                ESTABLISHED 1964 • LEBANON'S MOST RENOWNED AUTO GLASS COMPANY
+                ESTABLISHED 1964 • LEBANON'S LEADING AUTO GLASS COMPANY
               </div>
               
               <h1 className="text-3xl sm:text-4xl md:text-6xl lg:text-[4.75rem] xl:text-[5.25rem] font-extrabold leading-tight text-gray-900">
