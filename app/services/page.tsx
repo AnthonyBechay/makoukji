@@ -196,10 +196,10 @@ export default function Services() {
               <div className="w-16 h-16 bg-[#fae633] rounded-lg flex items-center justify-center mb-6 text-white">
                 {service.icon}
               </div>
-              <h3 className="text-2xl font-bold mb-3 text-gray-900">
+              <h3 className="text-2xl font-bold mb-4 text-gray-900">
                 {service.title}
               </h3>
-              <p className="text-gray-600 leading-relaxed flex-1 line-clamp-3 md:line-clamp-none">
+              <p className="text-gray-600 leading-relaxed flex-1">
                 {service.description}
               </p>
             </div>

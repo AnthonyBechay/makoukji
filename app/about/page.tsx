@@ -46,10 +46,10 @@ export default function About() {
               A Legacy of Excellence Since 1964
             </h2>
             <div className="prose prose-lg max-w-none">
-              <p className="text-lg text-gray-700 mb-6 leading-relaxed line-clamp-3 md:line-clamp-none">
+              <p className="text-lg text-gray-700 mb-6 leading-relaxed">
                 <strong className="text-[#fae633]">Ets. Georges Makoukji for autoglass</strong> was first founded in <strong className="text-gray-900">1964</strong> by Mr. Georges Makoukji on Dora highway towards the city of Beirut. We have successfully navigated all challenges and obstacles in Lebanon over the past six decades, establishing ourselves as the country's most trusted and renowned autoglass company, working closely with most major insurance companies in Lebanon.
               </p>
-              <p className="text-lg text-gray-700 leading-relaxed line-clamp-3 md:line-clamp-none">
+              <p className="text-lg text-gray-700 leading-relaxed">
                 In the beginning of the 21st century, the present Owner and General Manager Mr. Joseph Makoukji expanded the business into a newer and bigger operation by adding a new branch and a <strong className="text-[#fae633]">1500 square meters warehouse</strong>, ensuring we maintain the most comprehensive inventory of autoglass in Lebanon.
               </p>
             </div>

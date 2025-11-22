@@ -20,7 +20,7 @@ export default function Home() {
                 <span className="block text-[#fae633] mt-4 text-2xl md:text-3xl lg:text-4xl">Since 1964</span>
               </h1>
               
-              <p className="text-xl md:text-2xl lg:text-[1.45rem] text-gray-600 leading-relaxed max-w-2xl line-clamp-3 md:line-clamp-none">
+              <p className="text-xl md:text-2xl lg:text-[1.45rem] text-gray-600 leading-relaxed max-w-2xl">
                 With over <strong className="text-[#fae633]">60 years of experience</strong>, we are Lebanon's most renowned autoglass company. We maintain the most comprehensive inventory of car glass in the region, ensuring we have what you need when you need it.
               </p>
 
