@@ -7,7 +7,8 @@ type Review = {
   text: string;
 };
 
-const reviews: Review[] = [
+const fallbackReviews: Review[] = [
+const fallbackReviews: Review[] = [
   {
     name: 'Lina Akl',
     text: 'Had to change my car glass urgently due to a small incident that cracked my front glass. Makoukji autoglass offered a fast service. The result is impeccable. Highly recommended!',
@@ -32,6 +33,32 @@ const reviews: Review[] = [
 
 export default function TestimonialsSlider() {
   const [currentIndex, setCurrentIndex] = useState(0);
+  const [reviews, setReviews] = useState<Review[]>(fallbackReviews);
+
+  useEffect(() => {
+    const fetchReviews = async () => {
+      try {
+        const res = await fetch('/api/google-reviews');
+        if (!res.ok) return;
+        const data = await res.json();
+        if (Array.isArray(data.reviews) && data.reviews.length > 0) {
+          const mapped: Review[] = data.reviews
+            .filter((r: any) => r.text && (r.name || r.author_name))
+            .map((r: any) => ({
+              name: r.name || r.author_name,
+              text: r.text,
+            }));
+          if (mapped.length) {
+            setReviews(mapped);
+          }
+        }
+      } catch {
+        // silently fall back to hardcoded reviews
+      }
+    };
+
+    fetchReviews();
+  }, []);
 
   useEffect(() => {
     const interval = setInterval(() => {
@@ -39,7 +66,7 @@ export default function TestimonialsSlider() {
     }, 6000); // rotate every 6 seconds
 
     return () => clearInterval(interval);
-  }, []);
+  }, [reviews.length]);
 
   const visibleReviews = [0, 1, 2].map(
     (offset) => reviews[(currentIndex + offset) % reviews.length],

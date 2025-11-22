@@ -7,21 +7,48 @@ import { useState, useEffect } from 'react';
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
+  const [isHidden, setIsHidden] = useState(false);
 
   useEffect(() => {
+    let lastY = 0;
+
     const handleScroll = () => {
-      setScrolled(window.scrollY > 20);
+      const currentY = window.scrollY;
+      const isMobile = window.innerWidth < 768;
+
+      // existing background/shadow behaviour
+      setScrolled(currentY > 20);
+
+      if (isMobile) {
+        if (currentY > lastY + 5 && currentY > 80) {
+          // scrolling down: hide navbar on mobile
+          setIsHidden(true);
+        } else if (currentY < lastY - 5 || currentY < 40) {
+          // scrolling up or near top: show navbar
+          setIsHidden(false);
+        }
+      } else {
+        // always visible on desktop
+        setIsHidden(false);
+      }
+
+      lastY = currentY;
     };
+
     window.addEventListener('scroll', handleScroll);
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
   return (
-    <nav className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
+    <nav
+      className={`fixed top-0 left-0 right-0 z-50 transform transition-all duration-300 ${
+        isHidden ? '-translate-y-full' : 'translate-y-0'
+      } ${
       scrolled 
         ? 'bg-[#fae633] shadow-lg border-b border-[#d4c82a]' 
         : 'bg-[#fae633] shadow-sm'
-    }`}>
+    }`}
+    >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-24">
           <div className="flex-shrink-0">
