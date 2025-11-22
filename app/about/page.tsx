@@ -94,22 +94,22 @@ export default function About() {
         </div>
 
         {/* Mission Card */}
-        <div className="bg-gray-900 rounded-lg p-12 md:p-16 text-white shadow-xl">
+        <div className="bg-gray-900 rounded-lg p-8 md:p-16 text-white shadow-xl">
           <div className="max-w-4xl mx-auto">
-            <div className="text-center mb-8">
+            <div className="text-center mb-6 md:mb-8">
               <div className="inline-block px-6 py-3 bg-[#fae633] rounded-md mb-6 text-base md:text-lg font-semibold">
                 OUR COMMITMENT
               </div>
-            <h2 className="text-3xl md:text-5xl font-bold mb-6">
+              <h2 className="text-3xl md:text-5xl font-bold mb-4 md:mb-6">
                 Quality & Excellence
               </h2>
             </div>
-            <div className="bg-white/10 backdrop-blur-sm rounded-lg p-8 border border-white/20">
-              <p className="text-xl md:text-2xl text-gray-100 leading-relaxed text-center mb-8">
+            <div className="bg-white/10 backdrop-blur-sm rounded-lg p-6 md:p-8 border border-white/20">
+              <p className="text-lg md:text-2xl text-gray-100 leading-relaxed text-center mb-6 md:mb-8">
                 Our aim is to maintain a <strong className="text-white">high quality service</strong> in order to best serve our clients and to prove our presence in the Lebanese and international market. Ets. Georges Makoukji specializes in the area of autoglass and rubbers for all vehicles, generators and machinery.
               </p>
-              <div className="grid grid-cols-1 md:grid-cols-3 gap-6 text-center">
-                <div className="w-full mx-auto md:mx-0 px-6 py-6 md:p-6 bg-white/5 rounded-xl border border-white/10">
+              <div className="grid grid-cols-1 md:grid-cols-3 gap-4 md:gap-6 text-center">
+                <div className="w-full mx-auto md:mx-0 px-5 py-4 md:px-6 md:p-6 bg-white/5 rounded-xl border border-white/10">
                   <div className="text-xl sm:text-2xl md:text-3xl font-bold text-white mb-1">
                     Comprehensive
                   </div>
@@ -117,7 +117,7 @@ export default function About() {
                     Product Range
                   </div>
                 </div>
-                <div className="w-full mx-auto md:mx-0 px-6 py-6 md:p-6 bg-white/5 rounded-xl border border-white/10">
+                <div className="w-full mx-auto md:mx-0 px-5 py-4 md:px-6 md:p-6 bg-white/5 rounded-xl border border-white/10">
                   <div className="text-xl sm:text-2xl md:text-3xl font-bold text-white mb-1">
                     Best
                   </div>
@@ -125,7 +125,7 @@ export default function About() {
                     Quality
                   </div>
                 </div>
-                <div className="w-full mx-auto md:mx-0 px-6 py-6 md:p-6 bg-white/5 rounded-xl border border-white/10">
+                <div className="w-full mx-auto md:mx-0 px-5 py-4 md:px-6 md:p-6 bg-white/5 rounded-xl border border-white/10">
                   <div className="text-xl sm:text-2xl md:text-3xl font-bold text-white mb-1">
                     Competitive
                   </div>
@@ -177,27 +177,27 @@ export default function About() {
 
       {/* Expertise Section */}
       <section className="max-w-7xl mx-auto mb-28 safe-x-pad">
-        <div className="bg-white rounded-3xl p-10 md:p-20 border border-gray-200 shadow-lg">
-          <div className="text-center mb-12">
+        <div className="bg-white rounded-3xl p-8 md:p-20 border border-gray-200 shadow-lg">
+          <div className="text-center mb-8 md:mb-12">
             <div className="inline-block px-6 py-2.5 bg-[#fae633] text-gray-900 rounded-full mb-6 text-sm md:text-base font-semibold tracking-[0.18em] uppercase">
               Our Expertise
             </div>
-            <h2 className="text-3xl sm:text-4xl md:text-6xl font-bold mb-5 text-gray-900">
+            <h2 className="text-3xl sm:text-4xl md:text-6xl font-bold mb-4 md:mb-5 text-gray-900">
               Specialized Services
             </h2>
-            <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+            <p className="text-lg md:text-xl text-gray-600 max-w-3xl mx-auto">
               From everyday cars to the biggest trucks and buses, Makoukji handles every type of autoglass job with factory-level precision and care.
             </p>
           </div>
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-10">
-            <div className="p-8 bg-gray-50 rounded-xl border border-gray-200 shadow-sm">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-8 mb-8 md:mb-10">
+            <div className="p-6 md:p-8 bg-gray-50 rounded-xl border border-gray-200 shadow-sm">
               <p className="text-lg text-gray-700 leading-relaxed">
                 Ets. Georges Makoukji for autoglass is specialized in the area of autoglass for{' '}
                 <strong>windshields, backlights, door glass, side windows and roof glass</strong>{' '}
                 for all vehicle brands from the smallest car to the biggest truck or bus, in addition to yachts.
               </p>
             </div>
-            <div className="p-8 bg-gray-50 rounded-xl border border-gray-200 shadow-sm">
+            <div className="p-6 md:p-8 bg-gray-50 rounded-xl border border-gray-200 shadow-sm">
               <p className="text-lg text-gray-700 leading-relaxed">
                 We have a trained team that uses the most important products in the market today to help you solve all the problems that you encounter with your autoglass.
               </p>
