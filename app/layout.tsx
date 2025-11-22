@@ -36,9 +36,9 @@ export const metadata: Metadata = {
     siteName: "Makoukji Auto Glass",
   },
   icons: {
-    icon: "/makoukji-logo.png",
-    shortcut: "/makoukji-logo.png",
-    apple: "/makoukji-logo.png",
+    icon: "/makoukji-small-logo.png",
+    shortcut: "/makoukji-small-logo.png",
+    apple: "/makoukji-small-logo.png",
   },
 };
 
