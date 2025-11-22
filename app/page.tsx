@@ -129,35 +129,42 @@ export default function Home() {
       {/* Insurance Partners */}
       <section className="py-12 md:py-20 px-4 sm:px-6 lg:px-8 bg-gray-50 safe-x-pad">
         <div className="max-w-7xl mx-auto">
-          <div className="text-center mb-10">
-            <h2 className="text-3xl md:text-4xl font-bold mb-4 text-gray-900">
+          <div className="text-center mb-8 md:mb-10">
+            <h2 className="text-3xl md:text-4xl font-bold mb-3 md:mb-4 text-gray-900">
               Trusted by Major Insurance Companies
             </h2>
-            <p className="text-lg md:text-xl text-gray-600 max-w-2xl mx-auto">
-              We work with most of the leading insurance companies in Lebanon and are trusted to handle their autoglass claims quickly, correctly, and with full documentation.
+            <p className="text-base md:text-lg text-gray-600 max-w-2xl mx-auto">
+              We handle autoglass claims for most leading insurance companies in Lebanon, so your repair feels simple and fully documented.
             </p>
           </div>
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-4 md:gap-6">
             {[
               {
                 title: 'Most Major Insurers',
-                desc: 'We collaborate with a wide network of insurance companies across Lebanon for autoglass replacement.',
+                desc: 'Approved partner for many of Lebanon’s top insurance companies.',
               },
               {
-                title: 'Smooth Claim Handling',
-                desc: 'Our team helps you with the paperwork so your windshield or glass claim is processed as fast as possible.',
+                title: 'Direct Claim Support',
+                desc: 'We help you coordinate the claim so you don’t have to chase paperwork.',
               },
               {
-                title: 'Trusted Repair Partner',
-                desc: 'Insurers rely on our experience and quality to keep their clients safe and satisfied on the road.',
+                title: 'trusted since 1964',
+                desc: 'Decades of experience make us a safe choice for both drivers and insurers.',
               },
             ].map((item, index) => (
               <div
                 key={index}
-                className="bg-white rounded-xl border border-gray-200 shadow-sm p-6 text-center"
+                className="glass-effect bg-white/80 rounded-2xl border border-white/60 shadow-lg p-6 text-center"
               >
-                <h3 className="text-xl font-semibold mb-3 text-gray-900">{item.title}</h3>
-                <p className="text-gray-600 text-sm md:text-base leading-relaxed">{item.desc}</p>
+                <div className="mx-auto mb-3 h-10 w-10 rounded-full bg-[#fae633] flex items-center justify-center text-sm font-bold text-black">
+                  {index + 1}
+                </div>
+                <h3 className="text-lg md:text-xl font-semibold mb-2 text-gray-900 uppercase tracking-wide">
+                  {item.title}
+                </h3>
+                <p className="text-gray-700 text-sm md:text-base leading-relaxed">
+                  {item.desc}
+                </p>
               </div>
             ))}
           </div>
