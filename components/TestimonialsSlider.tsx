@@ -8,7 +8,6 @@ type Review = {
 };
 
 const fallbackReviews: Review[] = [
-const fallbackReviews: Review[] = [
   {
     name: 'Lina Akl',
     text: 'Had to change my car glass urgently due to a small incident that cracked my front glass. Makoukji autoglass offered a fast service. The result is impeccable. Highly recommended!',
