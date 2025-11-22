@@ -173,7 +173,7 @@ export default function Services() {
       {/* Hero Section */}
       <section className="py-20 mb-20 border-b border-gray-200 safe-x-pad">
         <div className="max-w-7xl mx-auto text-center">
-          <div className="inline-block mb-6 px-6 py-3 bg-[#fae633] text-white rounded-md text-base md:text-lg font-semibold">
+          <div className="inline-block mb-6 px-6 py-3 bg-[#fae633] text-gray-900 rounded-md text-base md:text-lg font-semibold">
             OUR SERVICES
           </div>
           <h1 className="text-5xl md:text-6xl font-bold mb-6 text-gray-900">
