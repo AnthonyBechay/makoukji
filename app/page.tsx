@@ -130,7 +130,7 @@ export default function Home() {
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-8 md:mb-10">
             <h2 className="text-3xl md:text-4xl font-bold mb-3 md:mb-4 text-gray-900">
-              Trusted by Major Insurance Companies
+              Insurance Company Partners
             </h2>
             <p className="text-base md:text-lg text-gray-600 max-w-2xl mx-auto">
               We handle autoglass claims for most leading insurance companies in Lebanon, so your repair feels simple and fully documented.
