@@ -9,7 +9,7 @@ export default function Collection() {
         {/* Hero Section */}
         <section className="py-16 mb-16 border-b border-gray-200">
           <div className="text-center">
-            <div className="inline-block mb-6 px-6 py-3 bg-[#fae633] text-gray-900 rounded-md text-base md:text-lg font-semibold">
+            <div className="inline-block mb-6 px-6 py-3 bg-[#fae633] text-white rounded-md text-base md:text-lg font-semibold">
               SPECIAL COLLECTION
             </div>
             <h1 className="text-5xl md:text-6xl font-bold mb-6 text-gray-900">

@@ -177,7 +177,7 @@ export default function Home() {
             </p>
             <Link
               href="/services"
-              className="inline-block px-10 py-4 bg-white text-gray-900 rounded-lg font-semibold text-lg sm:text-xl hover:bg-gray-100 transition-colors duration-200 shadow-md btn-lift"
+              className="inline-block px-10 py-4 bg-white text-[#fae633] rounded-lg font-semibold text-lg sm:text-xl hover:bg-gray-100 transition-colors duration-200 shadow-md btn-lift"
             >
               View All Services
             </Link>

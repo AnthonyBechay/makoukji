@@ -11,20 +11,20 @@ export default function About() {
       {/* Hero Section */}
       <section className="py-20 mb-20 border-b border-gray-200 safe-x-pad">
         <div className="max-w-7xl mx-auto text-center">
-          <div className="inline-block mb-6 px-6 py-3 bg-[#fae633] text-gray-900 rounded-md text-base md:text-lg font-semibold">
+          <div className="inline-block mb-6 px-6 py-3 bg-[#fae633] text-white rounded-md text-base md:text-lg font-semibold">
             ABOUT US
           </div>
           <h1 className="text-5xl md:text-6xl font-bold mb-6 text-gray-900">
             Lebanon's Most Renowned Auto Glass Company
           </h1>
           <div className="flex flex-col sm:flex-wrap sm:flex-row justify-center gap-3 sm:gap-4 mb-8">
-            <div className="w-full sm:w-auto text-center px-6 py-3 bg-[#fae633] text-gray-900 rounded-md font-semibold text-sm sm:text-base shadow-md">
+            <div className="w-full sm:w-auto text-center px-6 py-3 bg-[#fae633] text-white rounded-md font-semibold text-sm sm:text-base shadow-md">
               Established 1964
             </div>
             <div className="w-full sm:w-auto text-center px-6 py-3 bg-gray-900 text-white rounded-md font-semibold text-sm sm:text-base shadow-md">
               60+ Years of Excellence
             </div>
-            <div className="w-full sm:w-auto text-center px-6 py-3 bg-[#fae633] text-gray-900 rounded-md font-semibold text-sm sm:text-base shadow-md">
+            <div className="w-full sm:w-auto text-center px-6 py-3 bg-[#fae633] text-white rounded-md font-semibold text-sm sm:text-base shadow-md">
               Lebanon's Reference
             </div>
           </div>
@@ -39,7 +39,7 @@ export default function About() {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center mb-16">
           {/* Content */}
           <div className="space-y-6">
-            <div className="inline-block px-6 py-3 bg-[#fae633] text-gray-900 rounded-md text-base md:text-lg font-semibold">
+            <div className="inline-block px-6 py-3 bg-[#fae633] text-white rounded-md text-base md:text-lg font-semibold">
               OUR LEGACY
             </div>
             <h2 className="text-4xl md:text-5xl font-bold text-gray-900">
@@ -179,7 +179,7 @@ export default function About() {
       <section className="max-w-7xl mx-auto mb-28 safe-x-pad">
         <div className="bg-white rounded-3xl p-12 md:p-20 border border-gray-200 shadow-lg">
           <div className="text-center mb-12">
-            <div className="inline-block px-6 py-2.5 bg-[#fae633] text-gray-900 rounded-full mb-6 text-sm md:text-base font-semibold tracking-[0.18em] uppercase">
+            <div className="inline-block px-6 py-2.5 bg-[#fae633] text-white rounded-full mb-6 text-sm md:text-base font-semibold tracking-[0.18em] uppercase">
               Our Expertise
             </div>
             <h2 className="text-5xl md:text-6xl font-bold mb-5 text-gray-900">
