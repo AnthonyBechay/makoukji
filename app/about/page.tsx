@@ -55,8 +55,8 @@ export default function About() {
             </div>
           </div>
 
-          {/* Visual Yellow Box (hidden on small screens to declutter) */}
-          <div className="relative hidden md:block h-72 sm:h-80 md:h-96 rounded-3xl overflow-hidden shadow-[0_24px_70px_rgba(0,0,0,0.18)] bg-gradient-to-br from-[#fae633] via-[#fae633] to-[#d4c82a]">
+          {/* Visual Yellow Box (shifted slightly right so its shadow doesn't overlap text) */}
+          <div className="relative hidden md:block md:ml-8 lg:ml-16 h-72 sm:h-80 md:h-96 rounded-3xl overflow-hidden shadow-[0_24px_70px_rgba(0,0,0,0.18)] bg-gradient-to-br from-[#fae633] via-[#fae633] to-[#d4c82a]">
             {/* soft light */}
             <div
               className="absolute inset-0 opacity-40"
@@ -106,7 +106,7 @@ export default function About() {
             </div>
             <div className="bg-white/10 backdrop-blur-sm rounded-lg p-6 md:p-8 border border-white/20">
               <p className="text-base md:text-2xl text-gray-100 leading-relaxed text-center mb-5 md:mb-8">
-                Our aim is to maintain a <strong className="text-white">high quality service</strong> in order to best serve our clients and to prove our presence in the Lebanese and international market. Ets. Georges Makoukji specializes in the area of autoglass and rubbers for all vehicles, generators and machinery.
+                Our aim is to maintain a <strong className="text-white">high quality service</strong> in order to best serve our clients and to prove our presence in the Lebanese and international market. Ets. Georges Makoukji specializes in the area of autoglass and rubbers for all vehicles and machinery.
               </p>
               <div className="grid grid-cols-1 md:grid-cols-3 gap-3 md:gap-6 text-center">
                 <div className="w-full mx-auto md:mx-0 px-4 py-3 md:px-6 md:p-6 bg-white/5 rounded-xl border border-white/10">
